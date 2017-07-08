@@ -1,0 +1,23 @@
+body.body-bg{
+	background: #efefef;
+}
+.fail-msg{
+	font-size:16px;
+	color:#20304b;
+	letter-spacing:0;
+	text-align:left;
+	padding:23px 20px;
+}
+
+.download-btn{
+	box-sizing: border-box;
+	margin:20px 20px 0 20px;
+	height: 48px;
+	line-height: 48px;
+	font-size:18px;
+	color:#ffffff;
+	text-align:center;
+	background:#46cb4e;
+	border-radius:2px;
+	display: block;
+}

@@ -1,0 +1,76 @@
+html,body{
+	background: #f7f7f7;
+	min-height: 100%;
+}
+.tab{
+  border-bottom:1px solid rgb(239, 239, 239);
+}
+.tab div{
+  display: inline-block;
+	width: 32.4%;
+	text-align: center;
+	line-height: 48px;
+	font-size: 16px;
+	position: relative;
+	color: #68758e;
+}
+.activeTarget{
+  color: #0093ff !important;
+  border-bottom: 2px solid #0093ff;
+}
+.scoreItem{
+  padding: 11px 12px 14px 12px;
+  position: relative;
+  border-bottom:1px solid rgb(239, 239, 239);
+}
+.scoreName{
+  font-size: 16px;
+  line-height: 24px;
+  color: #20304b;
+}
+.scoreDate{
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 3px;
+  color: #68758e;
+}
+.score{
+  height: 25px;
+  position: absolute;
+  top: 7px;
+  right: 12px;
+  text-align: right;
+}
+.score span{
+  font-size: 16px;
+  line-height: 25px;
+
+}
+.loading{
+	height:72px;
+	font-size:14px;
+	line-height:72px;
+	color:#68758e;
+	text-align:center;
+	background-color:#f7f7f7;
+}
+.emptyImg{
+	background: url(img/wu@2x.png) no-repeat;
+	background-size: 100%;
+	display: block;
+	width: 140px;
+	height: 140px;
+}
+.empty{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: #f7f7f7;
+	display: box;
+  display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-orient:vertical;
+
+	-webkit-box-pack: center;
+}

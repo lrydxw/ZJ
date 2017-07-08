@@ -1,0 +1,28 @@
+html,body{
+	background: #f7f7f7;
+	min-height: 100%;
+}
+.rulesText{
+	padding: 17px 12px 17px 15px;
+}
+.rulesText p{
+	font-size: 14px;
+	color: #20304b;
+	line-height: 20px;
+	/*margin-top: 5px;*/
+}
+table,table p{
+	font-size: 12px !important;
+	/*margin-top: 0 !important;*/
+}
+h4{
+	margin-top: 5px;
+}
+table td,th{
+	text-align: center;
+	padding: 0;
+	border: 1px solid #000;
+}
+table{
+	border-collapse: collapse;/* 边框合并属性  */
+}

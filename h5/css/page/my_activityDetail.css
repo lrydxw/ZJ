@@ -1,0 +1,32 @@
+.mybgc{
+	background-color: #fdf5bd;
+}
+.butavt{
+	overflow: hidden;
+	padding: 1.25rem 4.167%;
+	width: 100%;
+	box-sizing: border-box;
+
+}
+.Bradius{
+	/*margin: 0.438rem 0;*/
+	border-radius: 0.2rem;
+	border: 1px solid #fc5f5f;
+    background-color: #fc5f5f;
+    height: 2.75rem;
+    width: 100%;
+    font-size: 1.063rem;
+    color: #FFFFFF;
+    outline: none;
+}
+
+.Bradius.black{
+	border: 1px solid #fc5f5f;
+	background-color: #fc5f5f;
+	height: 2.75rem;
+	width: 100%;
+	font-size: 1.063rem;
+	color: #FFFFFF;
+	outline: none;
+}
+

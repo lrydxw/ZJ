@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no"/>
+
+		<title>诚信等级</title>
+		<link rel="stylesheet" href="../css/common/resetnew-min.css" />
+		<link href="../css/common/common.css"  rel="stylesheet" type="text/css"  />
+		<link rel="stylesheet" href="../css/page/my_honestlevelDetail.css" />
+	</head>
+	<body>
+		<div class="bodyMain">
+			<div class="bodyTop">
+				<div class="nvbt iback" onclick="window.tf56&&window.tf56.finishPage()"></div>
+				<div class="nvtt">诚信等级查看<a href="my_aboutHonestLeval.html"><i class="honestdetail"></i></a></div>
+			</div>
+			<div class="bodyContent">
+				<div class="level">
+					<div class="nowlevel">
+						<div class="detail_box width_a">
+							<!--<i class="icon_diamond"></i>-->
+							<span class="level_font">当前诚信等级</span>
+						</div>
+					</div>
+					<div class="honestlevel ">
+						<div id="iconbox">
+							<!--<span class="honestlevel_icon"></span>
+							<span class="honestlevel_icon"></span>
+							<span class="honestlevel_icon"></span>
+							<span class="honestlevel_icon"></span>
+							<span class="honestlevel_icon"></span>-->
+
+						</div>
+						<div class="d-empty hid">诚信积分空空如也</div>
+						<span class="describe_icon">您的诚信等级维持<span class="starNum"></span>星，请继续努力哦!</span>
+						<div class="d-empty">
+							<span class="d-emptyrule">如何恢复诚信等级？</span>
+						</div>
+					</div>
+				</div>
+
+				<!--<div id="rz" class="level">-->
+					<!--<div class="nowlevel"style="border-bottom: none;">-->
+						<!--<div class="detail_box" >-->
+							<!--<i class="icon_conform"></i>-->
+							<!--<span class="level_font">我的认证</span>-->
+						<!--</div>-->
+						<!--<div class="goDetail"><a href="#">查看详情<i class="goarrow"></i></a></div>-->
+					<!--</div>-->
+					<!--&lt;!&ndash;<div class="conform_info">-->
+						<!--<div class="info_font">真实姓名<span class="realname"></span></div>-->
+						<!--<div class="info_font">身份证<span class="idcard"></span></div>-->
+					<!--</div>&ndash;&gt;-->
+				<!--</div>-->
+				<div class="level radius">
+					<!--<div id="pj" class="nowlevel">-->
+						<!--<div class="detail_box" >-->
+							<!--<i class="icon_exchange"></i>-->
+							<!--<span class="level_font">交易评价</span>-->
+						<!--</div>-->
+						<!--<div class="goDetail"><a href="#">查看详情<i class="goarrow"></i></a></div>-->
+					<!--</div>-->
+					<div class="conform_info" id="pj">
+						<div class="evaluate_top">
+							<span class="evaluate_month">月评价</span>
+							<ul class="list_ul">
+								<li><span class="Num_detail trafficmonth"></span>交易量</li>
+								<li><span class="Num_detail highpraiseratemonth">暂无</span>好评率</li>
+								<li><span class="Num_detail differentialratemonth">暂无</span>差评率</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+				<div class="describe1"></div>
+				<div class="level radius">
+					<div class="conform_info">
+						<div class="evaluate_bottom">
+							<span class="evaluate_all">总评价</span>
+							<ul class="list_ul">
+								<li><span class="Num_detail traffictotal"></span>交易量</li>
+								<li><span class="Num_detail highpraiseratetotal"></span>好评率</li>
+								<li><span class="Num_detail differentialratetotal"></span>差评率</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="popup">
+					<span>客服热线:<a href="javascript:void(0)">400-8665566</a></span>
+					<span>服务时间:每日7:30-20:00</span>
+				</div>
+			</div>
+			<div id="J_sure"></div>
+			<script type="text/javascript" src="../js/lib/fastclick.js" ></script>
+			<script type="text/javascript" src="../js/weiget/mune.js" ></script>
+			<script type="text/javascript" src="../js/lib/zepto.min.js" ></script>
+	        <script type="text/javascript" src="../js/common/data.js" ></script>
+	        <!--<script>com_server = 'http://10.7.13.117:8080';</script>-->
+	        <script type="text/javascript" src="../js/common/driverTradeApi.js" ></script>
+	        <script type="text/javascript" src="../js/weiget/getJsonp.js" ></script>
+	        <script type="text/javascript" src="../js/page/my_honestlevelDetail_driver.js" ></script>
+			<link rel="stylesheet" href="../css/common/tf-popup.css" />
+			<script type="text/javascript" src="../js/weiget/tf-popup.js" ></script>
+	        <script>
+	        	$('.describe').mousedown(function(e){
+	        		return false;
+	        	})
+	        	hideMenu();
+	        	$('#pj').on('click',function(){
+	        		window.location.href='driver_tradeEvaluate.html'
+	        	})
+	        	$('#rz').on('click',function(){
+	        		window.tf56&&window.tf56.jumpToUserCertificate()
+	        	})
+	        	$('#J_sure').tfpop({
+				    title:'<h3 class="pop_h3">恢复诚信等级规则</h3>'+
+					'<ul class="pop_ul">'+
+					'<li class="li_a">适用对象</li>'+
+					'<li class="li_b">诚信等级降为零的用户</li>'+
+					'<li class="li_a">恢复方法</li>'+
+					'<li class="li_b">适用对象诚信等级降为零的用户恢复方法诚信等级消失后有在线交易记录的将在次月得到一颗星的诚信等级，连续3个月有在线交易记录或有1笔运费记录的将给予3星诚信等级</li>'+
+					'<li class="li_c">备注：以上需在交易期间投诉产生</li>'+
+					'</ul>',
+				    open: false,
+				    footer: [{
+				        text: '我知道了',
+				        click: function(){
+				           $('#J_sure').tfpop('hide');
+				        }
+				    }]
+				});
+	        	$('.d-emptyrule').on('click',function(){
+	        		$('#J_sure').tfpop('show');
+	        	})
+			    var vCode = getParamVal('vCode');
+				if(vCode/1>=20170222){
+					$('.bodyTop').hide()
+					$('.bodyContent').css('marginTop','0');
+				}
+	        </script>
+		</div>
+	</body>
+</html>

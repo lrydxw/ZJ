@@ -1,0 +1,228 @@
+html,body{
+	background: #f7f7f7;
+	min-height: 100%;
+}
+.currentScore{
+	padding: 9px 0 43px 30px;
+	position: relative;
+	background: #0093ff;
+	color: #fff;
+}
+.scoreItem{
+  padding: 11px 12px 14px 12px;
+  position: relative;
+  border-bottom:1px solid rgb(239, 239, 239);
+}
+.scoreName{
+  font-size: 16px;
+  line-height: 24px;
+  color: #20304b;
+}
+.scoreDate{
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 3px;
+  color: #b7becc;
+}
+.score{
+  width: 29px;
+  height: 25px;
+  position: absolute;
+  top: 7px;
+  right: 12px;
+  text-align: right;
+}
+.score span{
+  font-size: 16px;
+  line-height: 25px;
+
+}
+.scoreIndex1{
+	font-size: 12px;
+	line-height: 17px;
+}
+.scoreIndex2{
+	font-size: 32px;
+	line-height: 45px;
+	/*margin-bottom: 43px;*/
+}
+.scoreRulesText{
+	position: absolute;
+	background: url(img/guize@2x.png) no-repeat;
+	background-position: center;
+	width: 26px;
+	height: 26px;
+	background-size: 100%;
+	display: block;
+	top: 12px;
+	right: 12px;
+}
+.scorePart{
+	padding-left:12px;
+	padding-right:10px;
+	line-height: 48px;
+	font-size: 16px;
+	border-bottom: 1px solid rgb(239, 239, 239);
+	color: #20304b;
+	position: relative;
+}
+.arrow{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background-size: contain;
+	background-position: center;
+	vertical-align: middle;
+	/*padding: 2px 2px 2px 8px;*/
+}
+.arrowTo{
+	background:url(img/arrow@2x.png) no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.arrowDown{
+	background:url(img/down@2x.png) no-repeat;
+	background-size: contain;
+	vertical-align: middle;
+	background-position: center;
+}
+.arrowUp{
+	background:url(img/up@2x.png) no-repeat;
+	background-size: contain;
+	vertical-align: middle;
+	background-position: center;
+}
+.more{
+	position: absolute;
+	right: 10px;
+}
+.apartArea{
+	height: 10px;
+	background-color: #f7f7f7;
+}
+.loginMissionIcon{
+	background: url(img/login@2x.png) no-repeat;
+	display: inline-block;
+	width: 46px;
+	height: 46px;
+	background-size: contain;
+	vertical-align: middle;
+}
+.authMissionIcon{
+	background: url(img/huiyuanrenzheng@2x.png) no-repeat;
+	display: inline-block;
+	width: 46px;
+	height: 46px;
+	background-size: contain;
+	vertical-align: middle;
+}
+.loginText{
+	font-size: 14px;
+	color: #20304b;
+	margin-left: 10px;
+}
+.scoreMissionItem{
+	padding: 12px 20px 13px 12px;
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	padding-right:20px;
+	border-bottom: 1px solid rgb(239, 239, 239)
+}
+.missionDetail{
+	display: none;
+}
+.missionDetailItem{
+	position: relative;
+}
+.scoreMissionItemDetail{
+	padding: 17px 0 17px 68px;
+	border-bottom: 1px solid rgb(239, 239, 239)
+}
+.scoreMissionItemDetail1{
+	padding: 8px 0 5px 68px;
+	border-bottom: 1px solid rgb(239, 239, 239)
+}
+.detailText{
+	color: #20304b;
+	line-height: 20px;
+	font-size: 14px;
+}
+.detailScore{
+	color: #b7becc;
+	line-height: 20px;
+	font-size: 14px;
+
+}
+.missionStatus{
+	height: 26px;
+	line-height: 26px;
+	color: #fff;
+	font-size: 14px;
+	position: absolute;
+	top: 22px;
+	right: 12px;
+	text-align: center;
+	border-radius: 2px;
+}
+.missionStatusDone{
+	width: 62px;
+	background: #68758e;
+}
+.missionStatusInit{
+	width: 56px;
+	background: #b7becc;
+}
+.missionStatusPartily{
+	width: 67px;
+	background: #b7becc;
+}
+.missionTypeLogin{
+	width:115px;
+}
+.missionTypeCheck{
+	width: 47px;
+}
+.missionText{
+	height: 18px;
+	background-color: #ff553c;
+	display: block;
+	color: #fff;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: center;
+}
+.positionMissionBox{
+	position: relative;
+}
+
+.checkGoodsIcon{
+	background: url(img/chakanhuoyuan@2x.png) no-repeat;
+	display: inline-block;
+	width: 46px;
+	height: 46px;
+	background-size: contain;
+	vertical-align: middle;
+	position: absolute;
+	top: 14px;
+	left: 12px;
+}
+.publicGoodsIcon{
+	background: url(img/fabuhuoyuan@2x.png) no-repeat;
+	display: inline-block;
+	width: 46px;
+	height: 46px;
+	background-size: contain;
+	vertical-align: middle;
+	position: absolute;
+	top: 14px;
+	left: 12px;
+}
+.moreMission{
+	line-height: 20px;
+	font-size: 14px;
+	text-align: center;
+	background: #f7f7f7;
+	color: #68758e;
+	padding: 15px 0 15px 0;
+}

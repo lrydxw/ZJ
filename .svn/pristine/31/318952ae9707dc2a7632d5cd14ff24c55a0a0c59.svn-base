@@ -1,0 +1,53 @@
+/*tf-header*/
+.th-top{
+	line-height: 40px;
+	height: 40px;
+	font-size: 14px;
+	color: #666666;
+	position: relative;
+}
+.th-tflogo{
+	display: block;
+	position: absolute;
+	right: 0;
+	width: 116px;
+	height: 38px;
+	background:no-repeat center center url(th_tflogo.png);
+	background-size:116px;
+}
+.th-top-menu{
+	line-height: 100px;
+	height: 100px;
+	font-size: 16px;
+	color: #666666;
+	position: relative;
+}
+.th-tit{
+	position: absolute;
+	color: #666666;
+	font-size: 16px;
+	padding-left: 120px;
+}
+.th-logo{
+	position: absolute;
+	top: 25px;
+	width: 90px;
+	height: 51px;
+	background:no-repeat center center url(../../common/style/img/logo.png) ;
+	background-size:90px;
+}
+.th-menu{
+	text-align: right;
+}
+.th-menu li{
+	display: inline-block;
+	margin-left:32px;
+	cursor:pointer;
+}
+.th-menu li:last-child{
+	margin-right: 32px;
+}
+.th-menu .checked{
+	color: #22222C;
+	font-weight:bold ;
+}

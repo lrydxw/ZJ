@@ -1,0 +1,196 @@
+html{
+	background: #EFEFEF;
+}
+.honestdetail{
+	background: url(../img/the_rlue.png)no-repeat;
+	display: inline-block;
+	width:20px ;
+	height: 20px;
+	background-size:contain ;
+	position: absolute;
+	right:15px;
+	top: 14px;
+}
+.level{
+	padding: 0 0.9375rem;
+	position: relative;
+	border-bottom:1px solid #DFDFDF;
+	border-top: 1px solid #DFDFDF;
+}
+.nowlevel{
+	border-bottom: 1px solid #DFDFDF;
+	font-size: 0.9375rem;
+	line-height: 2.81rem;
+	color: #666666;
+}
+.level_font{
+	margin-left: 1.625rem;
+}
+#iconbox{
+	width: 100%;
+	height: 100%;
+	display: block;
+	margin-top: 1.4rem;
+	text-align: center;
+	margin-bottom: 0.65rem;
+}
+.honestlevelno_icon{
+	background: url(../img/user-star0.png)no-repeat;
+	height: 2.156rem;
+	width: 1.875rem;
+	display: inline-block;
+	background-size: contain;
+}
+.honestlevel_icon{
+	background: url(../img/user-star1.png)no-repeat;
+	height: 2.156rem;
+	width: 1.875rem;
+	display: inline-block;
+	background-size: contain;
+}
+.honestlevel_icon2{
+	background: url(../img/user-star2.png)no-repeat;
+	height: 2.156rem;
+	width: 1.875rem;
+	display: inline-block;
+	background-size: contain;
+}
+.honestlevel_icon3{
+	background: url(../img/user-star3.png)no-repeat;
+	height: 2.156rem;
+	width: 1.875rem;
+	display: inline-block;
+	background-size: contain;
+}
+.describe_icon{
+	display: block;
+	color: #FF6230;
+	margin-bottom: 1.562rem;
+	text-align: center;
+}
+.describe{
+	font-size: 0.625rem;
+	color: #999999;
+	background: #EFEFEF;
+	padding: 0 0.9375rem;
+	line-height: 1.937rem;
+}
+.describe1{
+	background: #EFEFEF;
+	padding: 0 0.9375rem;
+	height: 0.625rem;
+}
+.goarrow{
+	background: url(../img/goarrow.png) no-repeat;
+	width: 0.437rem;
+	height: 0.812rem;
+	display: inline-block;
+	background-size:contain ;
+	margin-left: 0.75rem;
+}
+.goDetail{
+	color: #999999;
+	text-align: right;
+	display: inline-block;
+	width: 50%;
+	line-height: 2.815rem;
+}
+.goDetail a{
+	color: #999999;
+	text-decoration: none;
+	font-size: 0.875rem;
+}
+.info_font{
+	line-height: 1.875rem;
+}
+.realname{
+	display: inline-block;
+	margin-left: 1rem;
+}
+.idcard{
+	display: inline-block;
+	margin-left: 1.93rem;
+}
+.detail_box{
+	display: inline-block;
+	font-size:0.9375rem ;
+	width: 48%;
+}
+.width_a{
+	width: auto;
+}
+.icon_diamond{
+	display: inline-block;
+	background: url(../img/diamond.png) no-repeat;
+	width: 1rem;
+	height: 0.9375rem;
+	background-size:contain ;
+	margin-right: 0.625rem;
+	position: absolute;
+}
+.icon_conform{
+	display: inline-block;
+	background: url(../img/conform.png) no-repeat;
+	width: 1rem;
+	height: 0.9375rem;
+	background-size:contain ;
+	margin-right: 0.625rem;
+	position: absolute;
+}
+.conform_info{
+	margin: 0.625rem 0;
+}
+.icon_exchange{
+	display: inline-block;
+	background: url(../img/exchange.png) no-repeat;
+	width: 1rem;
+	height: 0.9375rem;
+	background-size:contain ;
+	margin-right: 0.625rem;
+	position: absolute;
+}
+.evaluate_left{
+	display: inline-block;
+	border-right: 1px solid #DFDFDF;
+	width: 48%;
+}
+.evaluate_right{
+	display: inline-block;
+	width: 44%;
+	margin-left: 0.9375rem;
+}
+.evaluate_month{
+	background: url(../img/evaluate_month.png) no-repeat;
+	width: 2.56rem;
+	height: 1rem;
+	display: inline-block;
+	background-size:contain ;
+}
+.evaluate_all{
+	background: url(../img/evaluate.png)no-repeat;
+	width: 2.56rem;
+	height: 1rem;
+	display: inline-block;
+	background-size:contain ;
+}
+.conform_info li{
+	margin-top: 0.9375rem;
+}
+.Num_detail{
+	display: inline-block;
+	margin-left: 1.0rem;
+}
+.d-empty{
+	color: #666666;
+	margin-bottom: 1.562rem;
+	text-align: center;
+}
+.d-emptyrule{
+	display: none;
+	font-size:0.75rem;
+	color: #3B98E0;
+	border:1px solid #3B98E0;
+	border-radius: 4px;
+	margin-left: 4px;
+	padding: 0 4px;
+}

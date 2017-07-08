@@ -1,0 +1,24 @@
+{
+  "name": "rax-demo",
+  "author": "liujunying",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "rax-scripts start",
+    "build": "rax-scripts build",
+    "lint": "eslint --ext .js --ext .jsx ./src"
+  },
+  "dependencies": {
+    "rax": "^0.3.7",
+    "rax-image": "^0.3.7",
+    "rax-picture": "^0.3.7",
+    "rax-recyclerview": "^0.3.7",
+    "rax-slider": "^0.3.7",
+    "rax-text": "^0.3.7",
+    "rax-view": "^0.3.7"
+  },
+  "devDependencies": {
+    "rax-scripts": "^0.3.7",
+    "babel-eslint": "^7.1.0",
+    "eslint": "^3.10.0"
+  }
+}

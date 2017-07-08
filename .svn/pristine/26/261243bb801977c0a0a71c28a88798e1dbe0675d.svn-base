@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <title>应还</title>
+		<!-- css引入 -->
+		<link rel="stylesheet" href="../../common/style/reset-min.css" />
+		<link rel="stylesheet" href="../../common/style/common.css" />
+		<link rel="stylesheet" href="../../common/style/tf-pop-sp.css" />
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body class="body-bg">
+		<!--主体-->
+		<div class="body-main">
+			<!--内容-->
+			<div class="body-content">
+				
+				<a href="#" class="money-tips" id="moneyBill" style="display:none"></a>
+                <div class="bill-list" id="billList" style="display:none">
+                	
+                </div>
+                <div class="bill-no" style="display:none">
+                <img src="./statics/empty_bill@3x.png" alt="">
+                账单太干净啦，快去使用陆鲸白条吧
+                </div>
+                <div class="bill-btn" id="billBtn" style="display:none">
+                	<input type="text" value="¥ 0.00" readonly="true" id="billMoney">
+					<div class="bill-submit" id="billSumit">立即还款</div>
+                </div>
+                <div class="bill-time" style="display:none">借钱时间：2017年2月13日  14:12</div>
+			</div>
+		</div>
+		<!-- js引入 -->
+		<script type="text/javascript" src="../../common/js/lib/zepto.min.js" ></script>
+		<script type="text/javascript" src="../../common/js/lib/fastclick.js" ></script>
+		<script type="text/javascript" src="../../common/js/weiget/tool-fun.js" ></script>
+		<script type="text/javascript" src="../../common/js/weiget/base.js" ></script>
+		<script type="text/javascript" src="../../common/js/weiget/tf-popup-sp.js" ></script>
+		<script type="text/javascript" src="../../common/js/api/api-com.js" ></script>
+		<script type="text/javascript" src="main.js" ></script>
+	</body>
+</html>

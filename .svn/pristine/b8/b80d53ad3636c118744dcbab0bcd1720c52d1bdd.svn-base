@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <title>申请驿站长</title>
+		<!-- css引入 -->
+		<link rel="stylesheet" href="../../common/style/reset-min.css" />
+		<link rel="stylesheet" href="../../common/style/common.css" />
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body class="body-bg" style="height:100%">
+		<!--主体-->
+		<div class="body-main" style="height:100%">
+			<!--内容-->
+			<div class="body-content box" style="height:100%;position:relative;">
+				<form class="form">
+					<ul class="form-box">
+						<li class="form-li">
+							<span class="SQ-title">真实姓名</span>
+							<div class="input-box">
+							<input type="text" name="" class="shuru" placeholder="请输入您的真实姓名" color="gray">
+							</div>
+						</li>
+						<li class="form-li">
+							<span class="SQ-title">联系电话</span>
+							<div class="input-box">
+							<input type="text" name="" class="shuru" placeholder="请输入您的联系电话">
+							</div>
+						</li>
+						<li class="form-li">
+							<span class="SQ-title">身份证号</span>
+							<div class="input-box">
+							<input type="text" name="" class="shuru" placeholder="请输入您的身份证号">
+							</div>
+						</li>
+						<li class="form-li">
+							<span class="SQ-title">车队名</span>
+							<div class="input-box">
+							<input type="text" name="" class="shuru" placeholder="请输入您的公司/车队名称">
+							</div>
+						</li>
+						<li class="form-li">
+							<span class="SQ-title">聘用人数</span>
+							<div class="input-box">
+							<input type="text" name="" class="shuru" placeholder="请输入您手下司机人数">
+							</div>
+						</li>
+						<li class="form-li">
+							<span class="SQ-title">自有卡车</span>
+							<div class="input-box">
+							<input type="text" name="" class="shuru" placeholder="请输入您手下自有卡车数量">
+							</div>
+						</li>
+						<li class="form-li">
+							<span class="SQ-title">挂靠卡车</span>
+							<div class="input-box">
+							<input type="text" name="" class="shuru" placeholder="请输入您手下挂靠卡车数量">
+							</div>
+						</li>
+					</ul>
+					<ul class="form-box">
+					<li class="form-li">
+						<span class="SQ-title" >常驻城市</span>
+							<div class="input-box">
+						<input type="text" name="" class="shuru" placeholder="请选择您的常驻城市">
+							</div>
+					</li>
+					<li class="form-li">
+						<span class="SQ-title">籍贯</span>
+							<div class="input-box">
+						<input type="text"  name="" class="shuru" placeholder="请选择您的籍贯">
+							</div>
+					</li>
+					<li class="form-li">
+						<span class="SQ-title">起始地</span>
+							<div class="input-box">
+						<input type="text" name="" class="shuru" placeholder="请输入您的常跑起始地">
+							</div>
+					</li>
+					<li class="form-li">
+						<span class="SQ-title">目的地</span>
+							<div class="input-box">
+						<input type="text" name="" class="shuru" placeholder="请输入您的常跑目的地">
+							</div>
+					</li>
+					</ul>
+					<ul class="form-box">
+					<li class="form-li li-last" style="">
+						<span class="SQ-title" >驿站信息</span>
+						<input type="text" name="" class="YZ1" placeholder="为您的驿站起个名吧，最多15字"><br>
+						
+						<textarea class="YZ2" placeholder="简述您近几年助人为乐的故事吧，需包含时间地点人物，事情经过，最多400字"></textarea>
+					</li>
+					</ul>
+					<ul class="form-box">
+					<li class="form-li" style="margin-bottom:58px;">
+						<span class="SQ-title">邀请工号</span>
+							<div class="input-box">
+						<input type="text" name="" class="shuru" placeholder="请输入您的传化员工工号">
+							</div>
+					</li>
+					</ul>
+				</form>
+					
+			</div>
+			<span class="btn btn-off">提交申请</span>
+		</div>
+
+		<!-- js引入 -->
+		<script type="text/javascript" src="../../common/js/lib/zepto.min.js" ></script>
+		<script type="text/javascript" src="../../common/js/lib/fastclick.js" ></script>
+		<script type="text/javascript" src="../../common/js/weiget/tool-fun.js" ></script>
+		<script type="text/javascript" src="../../common/js/weiget/base.js" ></script>
+		<script type="text/javascript" src="../../common/js/api/api-com.js" ></script>
+		<script type="text/javascript" src="main.js" ></script>
+	</body>  
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no"/>
+
+		<title>交易评价</title>
+		<link rel="stylesheet" href="../css/common/resetnew-min.css" />
+		<link href="../css/common/common.css"  rel="stylesheet" type="text/css"  />
+		<link href="../css/page/driver_tradeEvaluate.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body class="body-bg">
+		<div class="bodyMain">
+			<div class="bodyTop">
+				<div class="nvbt iback" onclick="backFun()"></div>
+				<div class="nvtt">交易评价</div>
+			</div>
+			<div class="bodyContent mt49">
+				<!--<div class="trade_data ">
+					<div class="trade_evalaute">
+						<div class="thephoto"></div>
+						<div class="thename">lisi</div>
+						<div class="thestar">
+							<span class="thestars"></span>
+							<span class="thestars"></span>
+							<span class="thestars"></span>
+							<span 0class="thestars"></span>
+							<span class="thestars"></span>
+							<span class="thetime">2015-10-19 14:05</span>
+						</div>
+						
+						<div class="theevaluate">
+							45621256741322545
+						</div>
+					</div>
+					<div class="trade_detail">
+						<div class="address_info">54562315645</div>
+						<div class="goodsinfo">5451215415</div>
+					</div>
+				</div>-->
+				<div id="dataMsg"></div>
+				<div id="loadmore" class="loadmore hid">点击加载更多</div>
+			</div>
+			<script type="text/javascript" src="../js/weiget/mune.js" ></script>
+			<script type="text/javascript" src="../js/lib/zepto.min.js" ></script>
+	        <script type="text/javascript" src="../js/common/data.js" ></script>
+	        <script type="text/javascript" src="../js/common/driverTradeApi.js" ></script>
+	        <script type="text/javascript" src="../js/weiget/mune.js" ></script>
+	        <script type="text/javascript" src="../js/weiget/getJsonp.js" ></script>
+	        <script type="text/javascript" src="../js/page/driver_tradeEvaluate.js"></script>
+	        <script>
+	        	 $('#loadmore').on('click', function (e) {
+			        e.preventDefault();
+			        $('#loadmore').html('正在加载...');
+			        getEvaluateInfo();
+			    })
+	        </script>
+	</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <title>index</title>
+		<!-- css引入 -->
+		<link rel="stylesheet" href="css/common/resetnew-min.css" />
+		<link rel="stylesheet" href="css/common/common.css" />
+		<style>
+			#view p{
+				padding: 0.5rem;
+				margin: 0.5rem 0;
+				background-color: #FFFFFF;
+			}
+		</style>
+	</head>
+	<body class="body-bg">
+		<!--主体-->
+		<div class="body-main">
+			<!--头部-->
+			<div class="body-top">
+				页面索引
+			</div>
+			<!--内容-->
+			<div id="view" class="body-content">
+                
+			</div>
+		</div>
+		<!-- js引入 -->
+		<script type="text/javascript" src="js/lib/zepto.min.js" ></script>
+		<script>
+			var _map = __RESOURCE_MAP__;
+			var res = _map.res;
+			for(key in res){
+				if(key.match('.html')){
+					if(key.match('index.html')||key.match('demo.html'))continue;
+					$('#view').append('<p>'+key+'</p>')
+				}
+			}
+			$('#view p').on('click',function(){
+				var url = $(this).text();
+				if(window.tf56){
+					window.location.href=url;
+				}else{
+					if(url.match('login')){
+						window.location.href=url;
+					}else{
+						window.open(url);
+					}
+				}				
+			})
+		</script>
+	</body>
+</html>

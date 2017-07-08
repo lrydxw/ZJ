@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no"/>
+
+		<title>会员认证说明</title>
+		<link rel="stylesheet" href="../css/common/reset-min.css" />
+		<link href="../css/common/common.css"  rel="stylesheet" type="text/css"  />
+		<script type="text/javascript" src="../js/weiget/mune.js" ></script>
+		<style>
+			img{
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="bodyMain">
+			<div class="bodyTop">
+				<div class="nvbt iback" onclick="finishPage()"></div>
+				<div class="nvtt">会员认证说明</div>
+			</div>
+			<div class="bodyContent">
+				<div>
+					<img src="../css/img/approve-state.jpg">
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../js/lib/zepto.min.js" ></script>
+        <script>
+			/********货主头部 改造*********/
+			var getParamVal = function(key) {
+			    var reg = new RegExp("(^|&|\\?)"+ key +"=([^&]*)(&|$)");
+			    if (ret = location.search.match(reg)) {
+			        return decodeURIComponent(ret[2]);
+			    }
+			    return '';
+			}
+			var vCode = getParamVal('vCode');
+			if(vCode/1>=20170222){
+				$('.bodyTop').hide()
+				$('.bodyContent').css('marginTop','0');
+			}
+			/********货主头部*********/
+			hideMenu();
+			
+			function finishPage(){
+			   	window.tf56&&window.tf56.finishPage&&window.tf56.finishPage()
+			 }
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <title>index</title>
+
+		<!-- css引入 -->
+		<!-- <link rel="stylesheet" href="css/common/resetnew-min.css" />
+		<link rel="stylesheet" href="css/common/common.css" /> -->
+		<style>
+		/* 适应窗口大小  rem标准模式*/
+@media screen and (max-width: 374px) {
+	*{font-size: 16px;line-height: 16px;}
+}
+@media (min-width:375px) and (max-width: 413px) {
+	*{font-size: 18px;line-height: 18px;}
+}
+@media (min-width:414px) and (max-width: 479px) {
+	*{font-size: 20px;line-height: 20px;}
+}
+@media (min-width:480px) and (max-width:639px){
+	*{font-size: 24px;line-height: 24px;}
+}
+@media screen and (min-width: 640px) {
+	*{font-size: 32px;line-height: 32px;}
+}
+html{font-family:Verdana,'Hiragino Sans GB','Microsoft Yahei',sans-serif;-webkit-font-smoothing:antialiased}body{padding:0;margin:0}ul,li{list-style:none;margin:0;padding:0}h1,h2,h3,h4,h5,p{margin:0}img{border:0}input,img{vertical-align:middle}*{-webkit-tap-highlight-color:rgba(0,0,0,0)}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0}.clearfix:after{clear:both}
+		</style>
+		<style>
+			#view p{
+				padding: 0.5rem;
+				margin: 0.5rem 0;
+				background-color: #FFFFFF;
+			}
+			.body-top {
+				height: 3.0rem;
+				line-height: 3.0rem;
+				font-size: 1.125rem;
+				color: #3F3F3F;
+				background-color: #F7F7F7;
+				text-align: center;
+				border-bottom: 1px solid #DFDFDF;
+				position: fixed;
+				width: 100%;
+				top: 0px;
+				z-index: 100;
+			}
+			p a{
+				color: #030303;
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body class="body-bg">
+		<!--主体-->
+		<div class="body-main">
+			<!--头部-->
+			<div class="body-top">
+				页面索引
+			</div>
+			<!--内容-->
+			<div id="view" class="body-content">
+                
+			</div>
+		</div>
+
+
+		<!-- js引入 -->
+		<script>
+			var _map= __RESOURCE_MAP__;
+			var res = _map.res,html="";
+			for(var key in res){
+				if(key.match('.html')){
+					if(key.match('demo.html')){
+						continue;
+					}
+					html+=('<p><a href="'+key+'">'+key+'</a></p>')
+				}
+			}
+			document.getElementById("view").innerHTML=html
+			
+		</script>
+
+	</body>
+</html>

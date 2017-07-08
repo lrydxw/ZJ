@@ -1,0 +1,11 @@
+.left-menu{
+	padding: 0 0 0 15px;
+}
+.left-menu li{
+	height: 62px;
+	line-height: 62px;
+	font-size: 16px;
+}
+.left-menu li:hover{
+	cursor: pointer;
+}

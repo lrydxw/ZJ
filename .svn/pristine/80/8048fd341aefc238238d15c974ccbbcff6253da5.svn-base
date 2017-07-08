@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <title>LBS</title><meta content="LBS开发平台" name="keywords"><meta content="地理数据可视化，打造专属物流地图。轨迹定位全优化，量身定做货运专家" name="description">
+    <link rel="stylesheet" href="../../common/style/reset-min.css" />
+    <link rel="stylesheet" href="../../common/style/common.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="../../common/style/animate.css" />
+    <script>
+        var param = getid();
+        if(param){
+        	window.location = "component/main/index.html?"+param;
+        }else{
+        	window.location = "component/main/index.html";
+        }
+        function getid() {
+            var idUrl = document.URL;
+            var num = idUrl.indexOf("?")
+            if(num == -1){//不带参
+                return '';
+            }
+            idUrl = idUrl.substr(num + 1);
+            return idUrl;
+        }
+ </script>
+</head>
+<body class="body-bg">
+	<!--头部-->
+	<div class="body-top">
+		<!--<script id="header" type="text/html">
+		<div class="tf-wrapper bgc-black">
+			<div class="th-top tf-layout">
+				<i class="th-tflogo"></i>
+			</div>
+		</div>
+		<div class="tf-wrapper">
+			<div class="th-top-menu tf-layout">
+				<i class="th-logo"></i>
+				<h1 class="th-tit">{{title}}</h1>
+				<ul class="th-menu">
+				    {{each list as n i}}
+				        <li class="{{n.checked}}" data-url="{{n.url}}">{{n.name}}</li>
+				    {{/each}}
+				</ul>
+			</div>
+		</div>
+		</script>-->
+	</div>
+	<!--主体-->
+	<div class="body-main">
+		<div class="tm-banner-box">
+			<!--			
+			<div class="tm-banner-point">
+				<div class="tm-bp-list">
+					<i class="tm-switch-point checked"></i>
+					<i class="tm-switch-point"></i>
+				</div>
+			</div>
+			<div class="tm-bl">
+				<img class="tm-banner checked animated" src="p-banner1.jpg" />
+				<img class="tm-banner animated" src="p-banner2.jpg" />
+			</div>
+			-->
+		</div>
+		<div class="tf-wrapper">
+			<div class="tm-box tf-layout">
+				<div class="tm-box-header">
+					<div class="tm-bh-border"></div>
+					<div class="tm-bh-tit">产品与服务</div>
+					<div class="tm-bh-border"></div>
+				</div>
+				<div class="tm-map-box">
+					<i class="tm-map-img map1"></i>
+					<p class="tm-map-tit">物流地图</p>
+					<p class="tm-map-con">专注货运致力打造首家物流地图门户</p>
+				</div><div class="tm-map-box">
+					<i class="tm-map-img map1"></i>
+					<p class="tm-map-tit">物流地图</p>
+					<p class="tm-map-con">专注货运致力打造首家物流地图门户</p>
+				</div><div class="tm-map-box">
+					<i class="tm-map-img map1"></i>
+					<p class="tm-map-tit">物流地图</p>
+					<p class="tm-map-con">专注货运致力打造首家物流地图门户</p>
+				</div><div class="tm-map-box">
+					<i class="tm-map-img map1"></i>
+					<p class="tm-map-tit">物流地图</p>
+					<p class="tm-map-con">专注货运致力打造首家物流地图门户</p>
+				</div>
+			</div>
+		</div>
+		<div class="tf-wrapper">
+			<div class="tm-box tf-layout">
+				<div class="tm-box-header">
+					<div class="tm-bh-border"></div>
+					<div class="tm-bh-tit">解决问题</div>
+					<div class="tm-bh-border"></div>
+				</div>
+				<ul class="tm-problem-menu">
+					<li class="tm-problem-btn checked">轨迹服务</li><li class="tm-problem-btn">POI信息采集</li><li class="tm-problem-btn">定位服务</li><li class="tm-problem-btn">区域管理</li>
+				</ul>
+				<div class="tm-problem-box animated checked">
+					<div class="tm-problem-half">
+						<div class="tm-problem-tit">智能化运输，路线实时监控</div>
+						<div class="tm-problem-con">轨迹服务为智能物流的健康发展奠定了基础，平台将提供实时轨迹查询、轨迹纠偏、轨迹离线查看等服务，适用于物流车辆监控、车费计算、风险控制、数据分析，在技术的驱动下更加完善物流服务。</div>
+						<div class="tm-problem-more">更多详细>></div>
+					</div><div class="tm-problem-half">
+						<i class="tm-problem-img problem1"></i>
+					</div>
+				</div>
+				<div class="tm-problem-box animated">
+					<div class="tm-problem-half">
+						<div class="tm-problem-tit">多功能信息采集，有效搜索查询</div>
+						<div class="tm-problem-con">在物流地理信息系统中，确定有效POI，在不断采集信息的同时将有效的POI信息点及时输出。检索服务促进了信息的交互与流通：POI检索、货运路线检索、行政区边界数据检索、地理编码和逆地理编码。</div>
+						<div class="tm-problem-more">更多详细>></div>
+					</div><div class="tm-problem-half">
+						<i class="tm-problem-img problem1"></i>
+					</div>
+				</div>
+				<div class="tm-problem-box animated">
+					<div class="tm-problem-half">
+						<div class="tm-problem-tit">精准定位，位置不再未知</div>
+						<div class="tm-problem-con">物流定位服务， 在基于基站定位服务的基础上提供附近优质服务、设置电子围栏、实现高效的物流资源配置。可视化精准定位和管理，可以把控的物流状态。</div>
+						<div class="tm-problem-more">更多详细>></div>
+					</div><div class="tm-problem-half">
+						<i class="tm-problem-img problem1"></i>
+					</div>
+				</div>
+				<div class="tm-problem-box animated">
+					<div class="tm-problem-half">
+						<div class="tm-problem-tit">自定义下的区域化管理</div>
+						<div class="tm-problem-con">区域管理在行政区划的基础上可以自定义区域，区域的支配不再受到行政区划的局限，可以根据业务特点、范围自由划分区域块，实现物流企业信息网格化管理。</div>
+						<div class="tm-problem-more">更多详细>></div>
+					</div><div class="tm-problem-half">
+						<i class="tm-problem-img problem1"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tf-wrapper">
+			<div class="tm-box tf-layout">
+				<div class="tm-box-header">
+					<div class="tm-bh-border"></div>
+					<div class="tm-bh-tit">合作伙伴</div>
+					<div class="tm-bh-border"></div>
+				</div>
+				<div class="tm-logo">
+					<i class="tm-ehuodi"></i>
+					<i class="tm-lujing"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--页脚-->
+	<div class="body-footer">
+		<!--
+		<div class="footer-box">
+			<i class="footer-img"></i>
+			<ul class="footer-menu">
+				<li>产品中心</li><li>解决方案</li><li>友情合作</li><li>关于我们</li>
+			</ul>
+			<div class="footer-recordcode">浙公网安备33010902000631号 | 浙ICP备14026855号-4</div>
+		</div>
+		-->
+	</div>
+</body>
+</html>

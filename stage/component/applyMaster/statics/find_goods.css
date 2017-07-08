@@ -1,0 +1,85 @@
+.fg-form{
+	margin-top: 1rem;
+}
+.fg-icon{
+	position: absolute;
+	margin: 0.625rem;
+	width: 1.5rem;
+	height: 1.5rem;
+}
+.fg-icon.from{
+	background: transparent url(../img/qidian@2x.png) no-repeat 0 0/100% auto;
+}
+.fg-icon.to{
+	background: transparent url(../img/zhongdian@2x.png) no-repeat 0 0/100% auto;
+}
+.common-input-lg.from,
+.common-input-lg.to{
+	padding-left: 2.5rem;
+	font-size: 0.875rem;
+	color: #333;
+}
+.common-input-lg.from::-webkit-input-placeholder,
+.common-input-lg.to::-webkit-input-placeholder{
+	font-size: 0.875rem;
+	color: #999;
+}
+
+.common-input-lg.from{
+	border-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.common-input-lg.to{
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+.fg-history li{
+	padding: 0 1rem;
+	/*height: 2.75rem;*/
+	/*line-height: 2.75rem;*/
+	height: 2rem;
+	line-height: 2rem;
+	font-size: 0.875rem;
+	color: #666;
+}
+.fg-history li:active{
+	background-color: #DFDFDF;
+}
+.his-icon{
+	display: inline-block;
+}
+.his-icon.from{
+	margin-top: 0.5rem;
+	margin-right: 0.625rem;
+	width: 1rem;
+	height: 1rem;
+	vertical-align: top;
+	-webkit-background-size: 100% auto;
+	background: transparent url(../../css/img/history@2x.png) no-repeat 0 0/100% auto;
+}
+.his-icon.to{
+	margin: 1rem 0.3rem 0 0.3rem;
+	width: 0.875rem;
+	height: 1rem;
+	vertical-align: top;
+	background: transparent url(../../css/img/arrow@2x.png) no-repeat 0 0/100% auto;
+}
+
+.zoneparent span,
+.zonechild span{
+	font-size: 0.875rem;
+}
+
+.area-wrap p.zoneparent,
+.area-wrap p.zonechild
+{
+	height: 2.8125rem;
+	line-height: 2.8125rem;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.area-wrap .zoneparent{
+	color: #169ada;
+}

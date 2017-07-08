@@ -1,0 +1,127 @@
+@charset "utf-8";
+.underline {
+    border-bottom: 1px solid #DADADA;
+    overflow: hidden;
+}
+.meSpanL {
+    width: 48px;
+    height: 48px;
+    background: url("");
+    background-size:cover;
+    float: left;
+}
+.meSpanL img {
+    width: 100%;
+    margin: 8px 0 0 0;
+}
+.meSpanC{
+    width: 96%;
+    height: 64px;
+    float: left;
+    margin: 0 -105px 0 13px;
+}
+.meSpanR {
+    width: 20px;
+    height: 64px;
+    float: left;
+    margin-top: 20px;
+}
+.meP1 {
+    font-size: 16px;
+    color: #3F3F3F;
+    margin:10px 0 0 0;
+    float: left;
+}
+.meP2 {
+    font-size: 14px;
+    color: #999999;
+    margin: 5px 0 0 0;
+    padding-right: 95px;
+}
+.meMessageDiv {
+    /*border-bottom: 1px solid #DADADA;*/
+    overflow: hidden;
+    padding-left: 15px;
+}
+.meMessageDiv.down {
+    margin-bottom: 36px;
+}
+.meMessageSpan1 {
+    height: 50px;
+    line-height: 50px;
+    width: 40%;
+    float: left;
+}
+.meMessageSpan2 {
+    height: 50px;
+    line-height: 50px;
+    width: 50%;
+    float: left;
+    text-align: right;
+    color: #999999;
+}
+.meMessageSpan3 {
+    position: relative;
+    right: -10px;
+    height: 50px;
+    line-height: 50px;
+    width: 10%;
+    float: left;
+}
+.commonButton.logout {
+    margin-bottom: 20px;
+}
+/*******基本信息*************/
+.basicMessageDiv{border-bottom: 1px solid #DADADA;overflow:hidden;padding-left: 20px;background-color:#fff ;}
+.basicMessageSpan1{height: 60px;line-height:60px;width:80%;float: left;text-align: left;}
+.basicMessageSpan2{height: 60px;line-height:60px;width:20%;float: left;}
+.t_border{
+	border-top:1px solid #DADADA ;
+}
+/**清除浮动*/
+
+.clr:after{
+	content: '';
+	display: table;
+	clear: both;
+}
+.me_code{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	vertical-align: middle;
+	background-image:url(../img/me_code.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	-webkit-background-size: 100%;
+}
+
+
+/*全局样式*/
+body{
+    background: #EFEFEF;
+}
+.commonDiv{
+    margin:0;
+}
+.meMessageDiv{
+    margin:0 10px;
+    /*border-bottom: 1px solid #DADADA;*/
+}
+.not-border-bottom{
+    border-bottom: none;
+}
+.updonwline {
+    border-bottom: 1px solid #DADADA;
+    border-top: 1px solid #DADADA;
+    overflow: hidden;
+    margin:10px 0;
+}
+.border-wline{
+    box-sizing: border-box;
+    line-height: 0;
+    background-color: #DFDFDF;
+    width: 100%;
+    height: 1px;
+}

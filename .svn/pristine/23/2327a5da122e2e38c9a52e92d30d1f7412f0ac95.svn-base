@@ -1,0 +1,125 @@
+html,body{
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.search{
+	background:#efefef;
+	height: 52px;
+	padding:10px 12px;
+	position: absolute;
+	top:0px;
+	left: 0px;
+	width: 100%;
+	box-sizing: border-box;
+	z-index: 100;
+}
+.stage-list{
+	height: 100%;
+	overflow: auto;
+	padding:52px 0 10px;
+	box-sizing: border-box;
+}
+.cancel{
+	font-size:16px;
+	color:#0093ff;
+	position: absolute;
+	height: 32px;
+	width: 65px;
+	right: 0px;
+	top:10px;
+	text-align:center;
+	line-height: 32px;
+	display: none;
+}
+.input-box{
+ 	border: none;
+	display: block;
+	box-sizing: border-box;
+	position: relative;
+}
+.input-box .icon{
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	top:9px;
+	left: 50%;
+	background: url(./statics/search.png) no-repeat;
+	background-size: cover;
+	margin-left:-114px;
+}
+.input-box input{
+	width: 100%;
+ 	border: none;
+ 	background:#ffffff;
+	border-radius:4px;
+	height:32px;
+	line-height: 32px;
+	padding:0 10px;
+	box-sizing: border-box;
+}
+
+.input-box input::placeholder{
+	font-size:14px;
+	color:#bcc0c9;
+	text-align:center;
+}
+
+.input-box input::-webkit-input-placeholder{
+	font-size:14px;
+	color:#bcc0c9;
+	text-align:center;
+}
+
+.input-box-on{
+	padding-right: 55px;
+}
+
+.input-box-on input::placeholder{
+	text-align:left;
+}
+.input-box-on input::-webkit-input-placeholder{
+	text-align:left;
+}
+
+.stage-box{
+	padding:0 28px 13px 0;
+	border-bottom:1px solid #efefef;
+	position: relative;
+	overflow: hidden;
+}
+
+.stage-box:after{
+	content:"";
+	position: absolute;
+	right: 7px;
+	top:50%;
+	background: url(./statics/right_sub.png) no-repeat;
+	background-size:cover;
+	width: 20px;
+	height: 20px;
+	margin-top:-10px;
+}
+.stage-title{
+	font-size:16px;
+	height: 16px;
+	line-height: 16px;
+	color:#20304b;
+	text-align:left;
+	font-weight: 700;
+	border-left:4px solid #0093ff;
+	margin-top: 15px;
+	text-indent: 8px;
+}
+
+.stage-city,.stage-detail,.stage-detail{
+	font-size:14px;
+	color:#6e788a;
+	text-align:left;
+	margin: 5px 0 0 12px;
+	line-height: 20px;
+}
+
+.stage-city{
+	margin-top:10px;
+}

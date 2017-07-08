@@ -1,0 +1,95 @@
+*{font-size: 16px;line-height: 16px;}
+.new_bg{
+	background-color: #EFEFEF;
+}
+.body-main{
+	max-width: 500px;
+	margin: 0 auto;
+	line-height: 16px;
+}
+.ep-box{
+	margin-bottom: 10px;
+	padding-left: 94px;
+	position: relative;
+	background-color: #fff;
+}
+.ep-tit{
+	position: absolute;
+	left: 0;
+	width: 80px;
+	line-height: 48px;
+	text-align: right;
+	font-size:16px;
+	color:#68758e;
+}
+.ep-tit p{
+	font-size: 16px;
+}
+.tit1{
+	display: block;
+	line-height: 16px;
+	margin: 3px 0;
+}
+.tit1 p{
+	margin:14px 0;
+}
+.ep-con{
+	font-size:16px;
+	color:#20304b;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.con1{
+	height: 48px;
+	line-height: 48px;
+}
+.con2{
+	height: 55px;
+	padding-top: 13px;
+}
+.con3{
+	height: 104px;
+	padding: 3px 0;
+}
+.con4{
+	height: 74px;
+	padding: 3px 0;
+}
+.red{
+	color:#ff5941;
+}
+.con2 .ep-p{
+	font-size: 14px;
+	margin-bottom: 7px;
+}
+.con3 .ep-p{
+	font-size: 16px;
+	margin:14px 0;
+}
+.con4 .ep-p{
+	font-size: 16px;
+	margin:14px 0;
+}
+.ep-memo{
+	font-size:12px;
+	color:#68758e;
+	padding-left: 15px;
+	margin-bottom: 10px;
+}
+.ep-btn{
+	background-color:#0b8ef0;
+	height:48px;
+	color: #fff;
+}
+.ep-btn p{
+	text-align: center;
+}
+.ep-btn-p1{
+	padding-top: 6px;
+	letter-spacing:0.79px;
+}
+.ep-btn-p2{
+	margin-top: 4px;
+	font-size: 12px;
+}

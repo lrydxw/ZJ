@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no"/>
+		<title>放心付</title>
+		<link rel="stylesheet" href="../css/common/resetnew-min.css" />
+		<link href="../css/common/common.css"  rel="stylesheet" type="text/css"  />
+		<link href="../css/page/my_relaxPay.css"  rel="stylesheet" type="text/css"  />
+		<script type="text/javascript" src="../js/weiget/mune.js" ></script>
+		<script type="text/javascript">
+			hideMenu();
+		</script>
+	</head>
+	<body>
+
+		<div class="bodyMain">
+			<div class="bodyTop" style="border-bottom: none;">
+				<div class="nvbt iback" onclick="window.tf56&&window.tf56.finishPage()"></div>
+				<div class="nvtt">放心付</div>
+			</div>
+			<div class="bodyContent">
+				<div>
+					<img src="../css/img/relaxPay2.jpg" class="ower-doRelax">
+				</div>
+				<div class="relaxPay_rule">
+					<a href="./p_safePayRule.html" style="color: #038ee1;">《放心付纠纷处理规则》</a>
+				</div>
+			</div>
+
+		</div>
+		<script src="../js/lib/fastclick.js"></script>
+		<script src="../js/lib/zepto.min.js" charset="utf-8"></script>
+		<script src="../js/common/data.js"></script>
+		<script>
+			if(!mobileSystem.android){
+				$('.bodyTop').css('display', 'none')
+				$('.bodyContent').css('margin-top','0px')
+			}
+			var vCode = getParamVal('vCode');
+			if(vCode/1>=20170222){
+				$('.bodyTop').hide()
+				$('.bodyContent').css('marginTop','0');
+			}
+		</script>
+		<!--<script type="text/javascript" src="../js/lib/zepto.min.js"></script>-->
+		<!--<script type="text/javascript" src="../js/common/data.js"></script>-->
+		<!--<script type="text/javascript" src="../js/common/ownerTradeApi.js"></script>-->
+		<!--<script type="text/javascript" src="../js/weiget/getJsonp.js"></script>-->
+		<!--<script type="text/javascript" src="../js/page/sg_relaxPay1.js"></script>-->
+	</body>
+</html>

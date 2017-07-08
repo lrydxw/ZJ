@@ -1,0 +1,156 @@
+@charset "utf-8";
+.nvtt{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.bd-tit{
+	font-size: 1.125rem;
+	padding: 1rem 0;
+	text-align: left;
+	color: #252525;
+}
+.bd-time{
+	color: #999999;
+	font-size: 0.875rem;
+	padding-bottom: 1.25rem;
+}
+.bd-con{
+	color: #3F3F3F;
+	font-size: 1.0rem;
+	/*padding-bottom: 3.375rem;*/
+}
+.bd-con img{
+	width: 100%;
+	height: auto;
+	padding: 0.312rem 0;
+}
+.bd-con p{
+	font-size: 0.875rem;
+	line-height: 1.6;
+}
+.bd-con p:first-child{
+	margin-bottom: 0.625rem;
+}
+
+.introduce {
+	padding: .8125rem 0;
+	text-align: center;
+}
+.icon {
+	display: inline-block;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+.logo-icon {
+	margin-right: .625rem;
+	width: 2rem;
+	height: 2rem;
+	background-image: url(../img/broadcast-logo.png);
+}
+
+.share-title {
+	display: inline-block;
+	text-align: left;
+	font-size: .875rem;
+	color: #666666;
+	vertical-align: top;
+	margin-top: .55rem;
+	line-height: .875rem;
+}
+
+.title-b {
+	display: inline-block;
+	text-align: left;
+	font-size: 1rem;
+	color: #3b98e0;
+	vertical-align: top;
+	margin-top: .4rem;
+	line-height: 1rem;
+}
+
+.bodtom-box {
+	z-index: 666;
+	position: fixed;
+	bottom: 0rem;
+	width: 100%;
+	padding: .375rem 0 .375rem .9375rem;
+	background-color: #3b98e0;
+}
+
+.logobot-icon {
+	margin-right: .625rem;
+	width: 2.562rem;
+	height: 2.562rem;
+	background-image: url(../img/logo.png);
+}
+
+.bot-title {
+	display: inline-block;
+	text-align: left;
+	font-size: .9375rem;
+	color: #FFFFFF;
+	vertical-align: top;
+	margin-top: .86rem;
+	line-height: .9375rem;
+}
+
+.commonButton {
+	float: right;
+	height: 2rem;
+	width: 6rem;
+	margin-right: 2rem;
+	border: .0625rem solid #FFFFFF;
+	background-color: #FFFFFF;
+	color: #3b98e0;
+	font-size: .9375rem;
+	line-height: .9375rem;
+	border-radius: .125rem;
+	margin-top: .4rem;
+	outline: none;
+}
+
+.footDiv {
+    height: 40px;
+    line-height: 40px;
+	padding-top: 0.625rem;
+    padding-left: 0.625rem;
+    padding-bottom: 3.375rem;
+	color: 0.625rem;
+}
+
+.footDiv span{
+	font-size: .875rem;
+	color: #999;
+}
+
+.zan_btn {
+    padding: 10px;
+}
+
+.zan_icon {
+    display: inline-block;
+    width: 1rem;
+    height: 1.25rem;
+    vertical-align: middle;
+    background-image: url(../img/hyq_zan_gray@3x.png);
+    background-repeat: no-repeat;
+    /*background-position: center;*/
+    background-size: 100%;
+    -webkit-background-size: 100% auto;
+    margin-right: 4px;
+}
+
+.zan_icon1 {
+    display: inline-block;
+    width: 1rem;
+    height: 1.25rem;
+    vertical-align: middle;
+    background-image: url(../img/hyq_zan_blue@3x.png);
+    background-repeat: no-repeat;
+    /*background-position: center;*/
+    background-size: 100%;
+    -webkit-background-size: 100% auto;
+    margin-right: 4px;
+}

@@ -1,0 +1,32 @@
+/*footer*/
+.body-footer{
+	padding-top: 35px;
+	padding-bottom: 40px;
+	background-color: #f5f9fa;
+}
+.footer-img{
+	display: block;
+	width: 90px;
+	height: 51px;
+	background: no-repeat center center url(../../common/style/img/logo.png);
+	background-size:90px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+.footer-menu{
+	text-align: center;
+}
+.footer-menu li{
+	display: inline-block;
+	line-height: 21px;
+	margin: 0 40px;
+	font-size: 16px;
+	color: #1E2A2D;
+	margin-bottom: 40px;
+	cursor:pointer;
+}
+.footer-recordcode{
+	font-size: 14px;
+	color: #999999;
+	text-align: center;
+}

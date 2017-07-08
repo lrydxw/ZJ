@@ -1,0 +1,33 @@
+.ower-doRelax{
+	width: 100%;
+	display: inline-block;
+}
+.div_relaxPay{
+	width: 100%;
+	background: #FFFFFF;
+	position: fixed;
+	bottom: 0;
+	padding: 0.312rem 0;
+}
+.btn_relaxPay{
+	width: 96%;
+	height: 2.75rem;
+	border: none;
+	color: #FFFFFF;
+	background: #fb7204;
+	margin-left: 2%;
+	outline: none;
+}
+.relaxPay_rule{
+	margin-bottom: 0.75rem;
+	text-align: center;
+	outline: none;
+	color: #038ee1;
+}
+.relaxPay_rule a{
+	text-decoration: none;
+	font-size: 0.75rem;
+}
+.relaxPay_rule a:visited{
+	color: #038EE1;
+}

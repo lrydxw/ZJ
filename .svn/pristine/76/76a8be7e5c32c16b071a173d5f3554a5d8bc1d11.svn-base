@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+	<title>分页组件</title>
+	<meta charset="UTF-8">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="telephone=no" name="format-detection">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
+	
+		<link rel="stylesheet" href="../../common/style/reset-min.css" />
+		<link rel="stylesheet" href="../../common/style/common.css" />
+		<link rel="stylesheet" href="main.css" />
+	</style>
+</head>
+<body>
+	<div id="search" class="search">
+		<div class="input-box"><label class="icon"></label><input type="search" id="stageKey" placeholder="请输入您要搜索的驿站关键词"></div>
+		<span class="cancel">取消</span>
+	</div>
+	<div id="list" class="stage-list">
+		<div class="stage-box">
+			<div class="stage-title">传化公益传化公益传化公益的传化</div>
+			<div class="stage-city">常驻城市: 杭州市萧山区</div>
+			<div class="stage-detail">驿站长: 张公益&nbsp;&nbsp;&nbsp;&nbsp;籍贯: 杭州市萧山区</div>
+			<div class="stage-detail">常跑线路: 杭州市滨江区－金华市东阳市</div>
+		</div>
+		<div class="stage-box">
+			<div class="stage-title">传化公益传化公益传化公益的传化</div>
+			<div class="stage-city">常驻城市: 杭州市萧山区</div>
+			<div class="stage-detail">驿站长: 张公益&nbsp;&nbsp;&nbsp;&nbsp;籍贯: 杭州市萧山区</div>
+			<div class="stage-detail">常跑线路: 杭州市滨江区－金华市东阳市</div>
+		</div>
+		<div class="stage-box">
+			<div class="stage-title">传化公益传化公益传化公益的传化</div>
+			<div class="stage-city">常驻城市: 杭州市萧山区</div>
+			<div class="stage-detail">驿站长: 张公益&nbsp;&nbsp;&nbsp;&nbsp;籍贯: 杭州市萧山区</div>
+			<div class="stage-detail">常跑线路: 杭州市滨江区－金华市东阳市</div>
+		</div>
+	</div>
+<script type="text/javascript" src="../../common/js/lib/zepto.min.js" ></script>
+<!--<script type="text/javascript" src="../../common/js/lib/fastclick.js" ></script>-->
+<script type="text/javascript" src="../../common/js/weiget/tool-fun.js" ></script>
+<script type="text/javascript" src="../../common/js/weiget/base.js" ></script>
+<script type="text/javascript" src="../../common/js/api/api-com.js" ></script>
+<script src="../../common/js/weiget/scrollLoading.js"></script>
+<script type="text/javascript" src="main.js" ></script>
+</body>
+</html>

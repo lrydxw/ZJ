@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>优惠券详情</title>
+	<link rel="stylesheet" href="../css/common/common.css" />
+	<link rel="stylesheet" href="../css/common/resetnew-min.css" />
+	<link rel="stylesheet" href="../css/page/lbc_couponDetail.css" />
+</head>
+<body class="body-bg">
+<div class="body-main">
+	<div class="body-content" style="background-color: #FFF;margin-top:0;border-top:none;">
+		<div class="coupon-detail">
+
+			<span id="J-quota" class="nowrap">&nbsp;</span>
+			<span id="coupon-zhekou" class="coupon-zhekou"></span>
+			<div class="coupontype-detail">
+				<span class="_coupon-type"></span>
+				<i>|</i>
+				<span class="_coupon-online"></span>
+				<i>|</i>
+				<span class="_coupon-num">剩余<i></i>张</span>
+			</div>
+
+		</div>
+		<div class="common-div" style="padding:0 0 10px 0;margin: 0;">
+			<div id="" class="shopinfo">
+				<div class="top" data-id="">
+					<div class="pad-top">
+					<span class="font16" id="J-merchantname-2"></span>
+					<span id="s-money"><span class="fontAnnotation">人均&nbsp;</span><span class="fontOrange"></span><span class="fontOrange" id="J-perconsume"></span>元</span>
+					</div>
+					<div class="coupon-img"><img src="" /></div>
+				</div>
+
+			</div>
+			<div class="address fontAnnotation mb10" id="J-lo-la"><span id="J-address" class="ellipsis"></span></div>
+			<ul class="deal">
+				<!--<li class="li-1"><i class="b_zone3"></i><span class="font16" data-lo="" data-la="" id="J_lo_la">到这里去</span></li>-->
+				<li id="J-telephone" data-tel=""><i class="b-zone4"></i><span class="font16" ></span></li>
+			</ul>
+		</div>
+		<div class="common-div" style="display:none;">
+			<div class="backg-div">
+				<div class="div1"><div class="backg"></div></div>
+				<div class="div2"><div class="backg"></div></div>
+			</div>
+			<input type="hidden" id="J-merchantcouponid"/>
+			<span class="online-pay">线上买单专用</span>
+			<ul class="coupon-card">
+
+				<li class="coupon-left">&nbsp;</li>
+				<li class="coupon-right">
+					<div>
+						<p class="ft16 firstline" style="overflow: hidden;"><span id="J-merchantname-1"></span><span id="J-coupontype" class="hid">&nbsp;</span></p>
+						<!--<p>有效期：<span id="J_usestarttime"></span>至</p>-->
+						<!--<p id="J_useendtime"></p>-->
+						<span class="yj-div font16"><span id="J-receivednumber"></span>人已领</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<dl class="common-div border-top" style="padding:0 1.07rem 4rem 1.07rem;line-height: 1.3;">
+			<dt style="margin-top: 1rem;">有效期</dt>
+			<dd class="time-dd"><span id="J-usestarttime"></span>至<span id="J-useendtime"></span></dd>
+			<dt class="font14 rule">领取规则</dt>
+			<dd id="J-receivedesc" class="rule" style="margin-left: 0px;word-break: break-all;"></dd>
+			<dt class="font14 use">使用说明</dt>
+			<dd id="J-applicabledesc" class="use" style="margin-left: 0px;word-break: break-all;line-height: 1.3;"></dd>
+		</dl>
+
+		<div class="bodtom-box">
+			<i class="icon logobot-icon"></i><span class="bot-title">跑长途，上陆鲸！</span>
+			<button id="loadBtn" class="commonButton">点我下载</button>
+		</div>
+		<div id="jCall">
+			<p><a id="jPhone"></a></p>
+			<p><a id="jMobile"></a></p>
+			<div id="cancle">取消</div>
+		</div>
+		<div class="zheZhao"></div>
+	</div>
+
+</div>
+
+<script type="text/javascript" src="../js/lib/zepto.min.js"></script>
+<script type="text/javascript" src="../js/lib/fastclick.js" ></script>
+<script src="../js/common/data.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/weiget/base.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/weiget/MD5.js" type="text/javascript" charset="utf-8"></script>
+<!--<script src="../js/weiget/mune.js" type="text/javascript" charset="utf-8"></script>-->
+<script src="../js/common/lbcApi.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/weiget/getJsonp.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/page/lbc_couponDetail.js"  type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>

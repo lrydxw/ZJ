@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <title>陆鲸</title>
+		<!-- css引入 -->
+		<link rel="stylesheet" href="../css/common/resetnew-min.css" />
+		<link rel="stylesheet" href="../css/common/common.css" type="text/css"  />
+		<style>
+			body{
+				background-color:#52617c;
+			}
+			.ibox-img{
+				width: 100%;
+				height: auto;
+			}
+			.ibox-p{
+				position: absolute;
+				margin-top: 15%;
+				padding:0 4%;
+				font-family:PingFangSC-Regular;
+				color:#ffffff;
+			}
+			.ibox-tit{
+				font-size:1.5rem;
+			}
+			.ibox-con{
+				font-size:0.75rem;
+			}
+			.ibox-btn{
+				background-color:#0093ff;
+				border-radius:3.125rem;
+				width:9.375rem;
+				height:2.5rem;
+				text-align: center;
+				line-height: 2.5rem;
+				font-size: 1.0rem;
+				color: #FFFFFF;
+				margin: 0 auto;
+				margin-top: 8%;
+			}
+			.ibox-footer{
+				opacity:0.5;
+				font-family:PingFangSC-Semibold;
+				font-size:0.75rem;
+				color:#ffffff;
+				margin-top: 4%;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<!--主体-->
+		<div class="body-main">
+			<!--头部-->
+			<div class="body-top hid">
+				<div class="nvbt iback" onclick="backFun()"></div>
+				<div class="nvtt"></div>
+			</div>
+			<!--内容-->
+			<div class="body-content no-top">
+				<div class="ibox-p">
+					<span class="ibox-tit">陆鲸</span>
+					<span class="ibox-con">隶属于上市公司传化股份（股票代码：002010），是中国干支线物流 O2O 智能服务平台领导者。 基于共享经济理念和物流大数据技术，围绕人、车、 货三大核心主体，陆鲸致力于打造智能、高效、活跃的公路物流新生态，为用户会员提供信息交易、运输服务、汽后消费、保险金融等生意生活全周期一体化服务。</span>
+				</div>
+				<img class="ibox-img" src="../css/img/index-bg.png"/>
+				<div class="ibox-btn">下载陆鲸APP</div>
+				<div class="ibox-footer">—— 跑长途·上陆鲸 ——</div>
+			</div>
+		</div>
+		<!-- js引入 -->
+		<script type="text/javascript" src="../js/lib/zepto.min.js" ></script>
+		<script type="text/javascript" src="../js/lib/fastclick.js" ></script>
+		<script>
+			$('.ibox-btn').on('click',function(){
+				if(window.tf56&&window.tf56.openBrowser){
+					window.tf56.openBrowser('http://e.lujing56.com');
+				}else{
+					window.location.href='http://e.lujing56.com';
+				}
+				
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+body{
+	overflow-x: hidden;
+}
+.tm-banner-box{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.tm-banner-point{
+	position: absolute;
+	z-index: 1;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+}
+.tm-bp-list{
+	display: inline-block;
+}
+.tm-banner-point i{
+	display: inline-block;
+	margin-right: 10px;
+	width: 10px;
+	height: 10px;
+	border-radius:5px;
+	background-color: #FFFFFF;
+	cursor:pointer;
+}
+.tm-banner-point i:last-child{
+	margin-right: 0;
+}
+.tm-banner-point .checked{
+	width: 30px;
+}
+.tm-bl{
+	position: relative;
+}
+.tm-banner{
+	width: 100%;
+	height: auto;
+	display: none;
+	position: absolute;
+	top: 0;
+}
+.tm-banner:last-child{
+	position: static;
+	display: block;
+	visibility: hidden;
+}
+.tm-bl .checked{
+	display: block;
+	visibility: visible;
+}

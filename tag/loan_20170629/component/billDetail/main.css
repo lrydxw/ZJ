@@ -1,0 +1,237 @@
+.body-bg{
+	background:#efefef;
+}
+
+.body-content{
+	position: relative;
+}
+.bill-tips{
+	height:40px;
+	line-height: 40px;
+	font-size:14px;
+	color:#68758e;
+	text-indent: 10px;
+	position: relative;
+	background: #fff;
+	display: block;
+}
+
+.bill-tips label{
+	position: absolute;
+	right: 12px;
+}
+
+.bill-tips label img{
+	height: 14px;
+	display: inline-block;
+	margin-left:5px;
+	margin-bottom: 3px;
+}
+
+.bill-detail{
+	background:#68758e;
+	height:80px;
+	color:#ffffff;
+	padding: 20px 12px;
+	box-sizing: border-box;
+}
+.bill-detail .time{
+	font-size:12px;
+	color:#ffffff;
+	line-height:12px;
+}
+
+.bill-detail .money{
+	font-size:14px;
+	color:#ffffff;
+	margin-top:10px;
+	line-height:16px;
+}
+
+.bill-day{
+	font-size:14px;
+	color:#68758e;
+	line-height:30px;
+	text-align:left;
+	background:#efefef;
+	height:30px;
+	text-indent: 12px;
+}
+
+.bill-list{
+	overflow: auto;
+	padding-bottom:58px;
+}
+
+.bill-list .item{
+	height: 72px;
+	border-bottom: 1px solid #dfdfdf;
+	background: #fff;
+	position: relative;
+	padding-left: 44px;
+	overflow: hidden;
+}
+
+.radio-un,.radio-check{
+	width: 20px;
+	padding: 12px;
+	position: absolute;
+	left: 0px;
+	top:14px;
+}
+.radio-un img,.radio-check img{
+	width: 20px;
+	display: block;
+}
+
+.item .time{
+	font-size:14px;
+	color:#68758e;
+	line-height:14px;
+}
+.item .money{
+	font-size:18px;
+	color:#20304b;
+	line-height:18px;
+	margin:15px 0px 10px 0;
+}
+.item .status{
+	position: absolute;
+	right: 0px;
+	width: 16px;
+	height: 16px;
+	color:#c3c9d5;
+	padding:28px;
+	top:0px;
+}
+.item .money label{
+	font-size:12px;
+	color:#68758e;
+	line-height:12px;
+}
+
+.item .overdue{
+color:#ff553c;
+}
+/*已还记录*/
+.item-success .money,.item-success .time,.item-success .money label{
+	color:#c3c9d5;
+}
+
+.item-success .radio-un,.item-success .radio-check{
+	display: none;
+}
+
+/*还款按钮*/
+
+.bill-btn{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%
+}
+
+.bill-btn input{
+	font-size:18px;
+	color:#c3c9d5;
+	line-height:18px;
+	text-align:left;
+	height:48px;
+	text-indent: 12px;
+	line-height: 48px;
+	width: 100%;
+	padding-right: 120px;
+	border: none;
+	box-sizing: border-box;
+}
+
+.bill-btn .bill-submit{
+	background:#dfdfdf;
+	width:120px;
+	height:48px;
+	font-size:16px;
+	color:#ffffff;
+	line-height:48px;
+	text-align: center;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+
+.bill-btn-can .bill-submit{
+	background:#0093ff;
+}
+
+.bill-btn-can input{
+	color:#ff553c;
+}
+
+.bill-list-success .item{
+	padding-left:12px;
+}
+
+
+.bill-list-success .radio-un,.bill-list-success .radio-check{
+	display: none;
+}
+
+.bill-list-success .item .status{
+	display: none;
+}
+
+.bill-no{
+	margin-top:70px;
+	font-size:14px;
+	color:#68758e;
+	line-height:30px;
+	text-align:center;
+}
+
+.bill-no img{
+	display: block;
+	margin: auto;
+	width: 120px;
+}
+
+.money-tips{
+	display: block;
+	background:#fffbde;
+	height:41px;
+	line-height: 41px;
+	position: relative;
+	border-bottom:1px solid #dfdfdf;
+	font-size:14px;
+	color:#ff9a2f;
+	text-align:left;
+	text-indent: 10px;
+}
+
+.bill-time{
+	position: absolute;
+	right: 20px;
+	top:0px;
+	font-size:12px;
+	color:#ffffff;
+	line-height:12px;
+	background:rgba(0,0,0,0.5);
+	margin-top: 6px;
+	padding: 6px 6px;
+	box-sizing: border-box;
+	text-align: center;
+	border-radius: 4px;
+}
+.bill-time:before{
+	content:"";
+	position: absolute;
+	right: 10px;
+	top:-9px;
+	background:url(./statics/time-sub.png) no-repeat;
+	background-size: contain;
+	width: 12px;
+	height: 12px;
+	opacity: 0.5
+}
+
+.bill-list .item_none{
+	padding-left:15px;
+}

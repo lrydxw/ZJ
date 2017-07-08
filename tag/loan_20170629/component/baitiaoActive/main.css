@@ -1,0 +1,46 @@
+.body-main{
+	background: url("./statics/baitiao_bg.png");
+	background-size:contain;
+}
+
+.body-content{
+	position: relative;
+	margin: auto;
+	width: 375px;
+}
+.reg-form{
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	top:750px;
+}
+
+.reg-form input{
+	outline: none;
+	margin:10px 0 0px 38%;
+	display: block;
+	border: 1px solid #000;
+	border:none;
+	background: none;
+	width: 175px;
+	height: 42px;
+}
+
+.reg-form button{
+	display: block;
+	opacity: 0;
+	margin:64px auto 0;
+	width: 230px;
+	height: 45px;
+}
+
+.reg-form textarea{
+	outline: none;
+	display: block;
+    margin: 16px 0 0px 38%;
+    width: 170px;
+    height: 57px;
+    line-height: 24px;
+    border:none;
+    background: none;
+}

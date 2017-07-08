@@ -1,0 +1,80 @@
+.body-bg{
+	background-color: #FFFFFF;
+	min-width: 1000px;
+}
+.tf-wrapper{
+	background-color: #FFFFFF;
+}
+.bgc-black{
+	background-color: #222731;
+}
+.tf-layout{
+	width: 1000px;
+	margin: 0 auto;
+}
+.hid{
+	display: none;
+}
+.lt{
+	float: left;
+}
+.rt{
+	float: right;
+}
+a{
+	text-decoration: none;
+	color: #666;
+}
+
+
+/*about&product*/
+.product-banner{
+	background: #000;
+}
+.product-banner div{
+	padding: 30px 0 0;
+	width: 1000px;
+	margin: 0 auto;
+	height: 84px;
+	line-height: 84px;
+	color: #fff;
+	font-size: 18px;
+}
+.product-ct{
+	padding: 20px 0;
+}
+.left-bor{
+	width: 118px;
+}
+.right-bor{
+	width: 801px;
+	padding: 0 40px;
+	border-left: #ddd solid 1px;
+	min-height: 496px;
+}
+.right-head{
+	padding: 15px 0 20px;
+	border-bottom: #ddd solid 1px;
+	font-size: 18px;
+}
+.right-title{
+	height: 50px;
+	line-height: 50px;
+	border-bottom: #ddd solid 1px;
+	font-size: 18px;
+}
+.right-text{
+	padding: 10px 0;
+}
+.right-text li{
+	padding: 10px 0;
+	line-height: 22px;
+	font-size: 16px;
+}
+.marT-20{
+	margin-top: 20px;
+}
+.lt-menu .checked{
+	color: #22222C;
+	font-weight:bold ;
+}

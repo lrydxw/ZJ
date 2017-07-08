@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no"/>
+		<title>我的活动详情</title>
+		<link rel="stylesheet" href="../css/common/resetnew-min.css" />
+		<link href="../css/common/common.css"  rel="stylesheet" type="text/css"  />
+		<link rel="stylesheet" type="text/css" href="../css/page/my_activityDetail.css"/>
+	</head>
+	<body class="body-bg mybgc">
+		<div class="bodyMain">
+			<div class="bodyTop">
+				<div class="nvbt iback" onclick="backFun()"></div>
+				<div class="nvtt">活动详情</div>
+			</div>
+			<div class="bodyContent">
+				<img src="../css/img/my_actbg2.jpg" width="100%"/>
+				<div class="butavt" style="display: none;">
+					<button  class="Bradius" id="btn" >立即领取</button>
+				</div>
+			</div>
+			
+		</div>
+		<script src="../js/lib/zepto.min.js"></script>
+		<script type="text/javascript" src="../js/weiget/extend.js" ></script>
+		<script type="text/javascript" src="../js/weiget/mune.js" ></script>
+		<script type="text/javascript">
+			$('#btn').on('click',function(){
+				backFun();
+			});
+
+			var hasUnReceivedTraffic = extend.getHashParam('hasUnReceivedTraffic') + '',
+				btn = $('.butavt');
+			if(hasUnReceivedTraffic=='true'){
+				btn.show();
+			}else{
+				btn.hide();
+			}
+			var getParamVal = function(key) {
+			    var reg = new RegExp("(^|&|\\?)"+ key +"=([^&]*)(&|$)");
+			    if (ret = location.search.match(reg)) {
+			        return decodeURIComponent(ret[2]);
+			    }
+			    return '';
+			}
+			var vCode = getParamVal('vCode');
+			if(vCode/1>=20170222){
+				$('.bodyTop').hide()
+				$('.bodyContent').css('marginTop','0');
+			}
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

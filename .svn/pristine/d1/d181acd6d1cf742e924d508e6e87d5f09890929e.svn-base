@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>关于陆鲸</title>
+    <link rel="stylesheet" href="../css/common/reset-min.css" />
+    <link href="../css/common/common.css"  rel="stylesheet" type="text/css"  />
+    <link href="../css/common/my.css"  rel="stylesheet" type="text/css"  />
+    <script type="text/javascript" src="../js/weiget/mune.js" ></script>
+    <style>
+        .meMessageDiv{
+            background-color: #fff;
+            margin:0 0px;
+        }
+        .aboutDiv {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        .app_img{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .app_div{
+            background-color: transparent;
+            color: #FFFFFF;
+            position: absolute;
+            left: 50%;
+            margin-left: -75px;
+            top:50%;
+            margin-top: -102px;
+        }
+        .div1{
+            position: relative;
+        }
+        .icon-red{
+            width:10px;
+            height:10px;
+            border-radius: 100%;
+            background: #f00;
+            display: block;
+            position: absolute;
+            top:15px;
+            left:15px;
+            display: none;
+        }
+        .verk{
+            font-weight: normal;
+            font-size:12px;
+        }
+        .meMessageSpan1{
+            width:50%;
+        }
+        .meMessageSpan2{
+            width:40%;
+        }
+        .gjpt-logo{
+            width: 72px;
+            height: 20px;
+            background-image: url(../css/img/gjpt-logo.png);
+            background-size:100%;
+            position: absolute;
+            right: 15px;
+            bottom: 15px;
+        }
+    </style>
+</head>
+<body class="body-bg">
+<div class="bodyMain">
+    <div class="bodyTop">
+        <div class="nvbt iback" onclick="window.tf56&&window.tf56.finishPage()"></div>
+        <div class="nvtt">关于陆鲸</div>
+    </div>
+    <div class="bodyContent">
+        <div class="div1">
+            <i class="gjpt-logo"></i>
+            <div class="app_div">
+                <div style="width:144px;width:144px;margin: 0 auto;"><img width="150px" height="150px" src="../css/img/icon-code.png" /></div>
+                <div class="aboutDiv" >扫一扫，下载陆鲸<span></span></div>
+            </div>
+            <img src="../css/img/app-icon.jpg" class="app_img">
+        </div>
+        <div class="meMessageDiv center" style="position: relative;border-top:1px solid #DADADA;" onclick="window.tf56.checkUpdateVersion()">
+            <span class="meMessageSpan1">检查更新<b class="verk"></b></span>
+            <span class="meMessageSpan2" id="apkVersion"></span>
+            <span class="meMessageSpan3 icome"></span>
+            <a href="javascript:void(0)" class="icon-red"></a>
+        </div>
+        <div class="meMessageDiv center t_border not-border-bottom" style="margin-top: 10px;" onclick="openUrl('my_authenticationLogo.html')">
+            <span class="meMessageSpan1">会员认证说明</span>
+            <span class="meMessageSpan2"></span>
+            <span class="meMessageSpan3 icome"></span>
+        </div>
+        <div class="meMessageDiv center t_border not-border-bottom"  onclick="openUrl('driver_aboutRelaxPay.html')">
+            <span class="meMessageSpan1">放心付是什么</span>
+            <span class="meMessageSpan2"></span>
+            <span class="meMessageSpan3 icome"></span>
+        </div>
+        <div class="meMessageDiv center t_border not-border-bottom"  onclick="openHelp()">
+            <span class="meMessageSpan1">帮助中心</span>
+            <span class="meMessageSpan2"></span>
+            <span class="meMessageSpan3 icome"></span>
+        </div>
+        <div class="meMessageDiv center t_border "  onclick="openUrl('my_advise.html?type=0')">
+            <span class="meMessageSpan1">意见反馈</span>
+            <span class="meMessageSpan2"></span>
+            <span class="meMessageSpan3 icome"></span>
+        </div>
+
+    </div>
+</div>
+<script type="text/javascript" src="../js/lib/zepto.min.js" ></script>
+<script type="text/javascript" src="../js/weiget/getJsonp.js"></script>
+<script src="../js/lib/fastclick.js"></script>
+<script type="text/javascript" src="../js/common/data.js" ></script>
+<script type="text/javascript" src="../js/common/partyApi.js" ></script>
+<script type="text/javascript" >
+    var H5Version = window.tf56&&window.tf56.getH5Version();
+    var apkVersion = window.tf56&&window.tf56.getApkVersion();
+    var versionCode = window.tf56&&window.tf56.getVersionCode();
+
+    //			apkVersion = apkVersion?apkVersion:'1.0.3';
+    //			H5Version = H5Version?H5Version:'1.0.3';
+    //          versionCode = versionCode?versionCode:'2016012517';
+    function getVersion(){
+        var param = {};
+        param.url = apiUrl.upgradeVersion+'&datasource=driverapp&random=' + Math.random();
+        param.data ={
+            'code':versionCode,
+            'product':'01',
+            'role':'01',
+            'device':'01',
+            'os':'01'
+        }
+        param.callback = function(data){
+            if(data.result=='error'){
+                $('.meMessageSpan1').find('b').html('(已是最新版)')
+            }else{
+                //$('.icon-red').show()
+            }
+        }
+        param.errorCallback=function(data){
+            window.tf56&&window.tf56.alertMessage(data);
+        }
+        getJsonp(param);
+
+    }
+    getVersion()
+    $("#apkVersion").html("V"+H5Version);
+    hideMenu();
+    function openHelp(){
+        window.tf56&&window.tf56.jumpToQuestion();
+//				var url='';
+//		        if (com_server.match(/test/)){
+//		            url='http://static.test.tf56.com/lujing/h5/view/p_help.html?type=0';
+//		        }else{
+//		            url='http://static.tf56.com/lujing/view/h5/p_help.html?type=0';
+//		        }
+//		        window.location.href=url;
+    }
+</script>
+</body>
+
+</html>

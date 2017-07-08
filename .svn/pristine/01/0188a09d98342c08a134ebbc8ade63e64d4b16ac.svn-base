@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <title>开票说明</title>
+		<!-- css引入 -->
+		<link rel="stylesheet" href="../css/common/resetnew-min.css" />
+		<link rel="stylesheet" href="../css/common/common.css" type="text/css"  />
+	</head>
+	<body>
+		<!--主体-->
+		<div class="body-main">
+			<!--头部-->
+			<div class="body-top hid">
+				<div class="nvbt iback" onclick="backFun()"></div>
+				<div class="nvtt"></div>
+			</div>
+			<!--内容-->
+			<div class="body-content no-top">
+				<img style="width: 100%;" src="../css/img/etc-helpBilling.png" />
+			</div>
+		</div>
+		<!-- js引入 -->
+		<!--<script type="text/javascript" src="../js/lib/debug.js" ></script>-->
+		<script type="text/javascript" src="../js/lib/zepto.min.js" ></script>
+		<script type="text/javascript" src="../js/lib/fastclick.js" ></script>
+		<script type="text/javascript" src="../js/common/data.js" ></script>
+		<script type="text/javascript" src="../js/weiget/getJsonp.js" ></script>
+	</body>
+</html>

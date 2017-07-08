@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<title>认证邀请码</title>
+		<link href="../css/common/reset-min.css" rel="stylesheet"/>
+		<link href="../css/common/common.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="../css/page/my_refillinvitecode.css"/>
+	</head>
+	<body class="body-bg">
+		<div class="bodyMain">
+			<div class="bodyTop">
+				<div class="nvbt iback" onclick="window.tf56&&window.tf56.finishPage();"></div>
+				<div class="nvtt">认证邀请码</div>
+			</div>
+			<div class="bodyContent">
+				<input id="J_invitecode" class="commonInput invite-code"  placeholder="请输入邀请人的邀请码" autocomplete="off" maxlength="6"/>
+				<div>
+					<button id="J_sure_btn" class="commonButton black">确定</button>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../js/lib/zepto.min.js"></script>
+		<script type="text/javascript" src="../js/lib/fastclick.js"></script>
+		<script type="text/javascript" src="../js/weiget/mune.js"></script>
+		<script type="text/javascript" src="../js/common/data.js" ></script>
+		<script type="text/javascript" src="../js/common/partyApi.js" ></script>
+		<script type="text/javascript" src="../js/weiget/getJsonp.js" ></script>
+		<script src="../js/page/my_refillinvitecode.js"></script>
+		<script>
+			/*URL里面的参数*/
+			var getParamVal = function(key) {
+			    var reg = new RegExp("(^|&|\\?)"+ key +"=([^&]*)(&|$)");
+			    if (ret = location.search.match(reg)) {
+			        return decodeURIComponent(ret[2]);
+			    }
+			    return '';
+			}
+			var type = getParamVal('type');// 0||默认 司机 1货主
+			var sourceCode = window.tf56 && window.tf56.getSourceCode();
+			if(type==1||sourceCode=='0103010101'){
+				document.querySelector('.bodyTop').className = 'bodyTop bodyTopOld'
+				document.querySelector('.iback').className = 'nvbt iback ibackOld'
+				document.querySelector('.nvtt').className = 'nvtt nvttOld'
+			}
+		</script>
+	</body>
+
+</html>

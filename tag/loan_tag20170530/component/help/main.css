@@ -1,0 +1,56 @@
+.body-bg{
+	background: #eceef3;
+}
+.qa-tool{
+	display: block;
+	background:#ffffff;
+	width:100%;
+	height:48px;
+	line-height: 48px;
+	overflow: hidden;
+	box-shadow:0 -1px 2px 0 rgba(0,0,0,0.05), inset 0 0 0 0 #dfdfdf;
+}
+.qa-tool .title{
+	float: left;
+	margin-left: 12px;
+	font-size:16px;
+	color:#20304b;
+	text-align:left;
+}
+.qa-tool .title label{
+	font-size: 12px;
+}
+
+.qa-tool .dir{
+	float: right;
+	margin-right: 12px;
+}
+.qa-tool .dir label{
+	font-size:16px;
+	color:#0093ff;
+}
+.qa-tool .dir img{
+	width: 16px;
+	display: inline-block;
+	margin-top: -4px;
+	transform:rotate(90deg);
+	-webkit-transform:rotate(90deg);
+}
+
+.qa-on .dir img{
+	transform:rotate(-90deg);
+	-webkit-transform:rotate(-90deg);
+}
+.qa-cont{
+	height: 0px;
+	overflow: hidden;
+	background:#f7f7f7;
+	line-height: 24px;
+	font-size:14px;
+	color:#68758e;
+	box-shadow:0 -1px 2px 0 rgba(0,0,0,0.05), inset 0 0 0 0 #dfdfdf;
+}
+.qa-cont-show{
+	padding: 14px 12px;
+	height: auto;
+}

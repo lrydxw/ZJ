@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <title>SQYZZ</title>
+        <script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<!-- css引入 -->
+		<link rel="stylesheet" href="../../common/style/reset-min.css" />
+		<link rel="stylesheet" href="../../common/style/common.css" />
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body class="body-bg">
+		<!--主体-->
+		<div class="body-main">
+			<!--内容-->
+			<div class="body-content">
+				<form class="form">
+					<li class="form-li li-first">
+						<span class="SQ-title">真实姓名</span>
+						<input type="text" name="" class="shuru" placeholder="请输入您的真实姓名" color="gray">
+					</li>
+					<li class="form-li">
+						<span class="SQ-title">联系电话</span>
+						<input type="text" name="" class="shuru" placeholder="请输入您的联系电话">
+					</li>
+					<li class="form-li">
+						<span class="SQ-title">身份证号</span>
+						<input type="text" name="" class="shuru" placeholder="请输入您的身份证号">
+					</li>
+					<li class="form-li">
+						<span class="SQ-title">车队名</span>
+						<input type="text" name="" class="shuru" placeholder="请输入您的公司/车队名称">
+					</li>
+					<li class="form-li">
+						<span class="SQ-title">聘用人数</span>
+						<input type="text" name="" class="shuru" placeholder="请输入您手下司机人数">
+					</li>
+					<li class="form-li">
+						<span class="SQ-title">自有卡车</span>
+						<input type="text" name="" class="shuru" placeholder="请输入您手下自有卡车数量">
+					</li>
+					<li class="form-li">
+						<span class="SQ-title">挂靠卡车</span>
+						<input type="text" name="" class="shuru" placeholder="请输入您手下挂靠卡车数量">
+					</li>
+					<li class="form-li" style="margin-top:10px;">
+						<span class="SQ-title" >常驻城市</span>
+						<input type="text" name="" class="shuru" placeholder="请选择您的常驻城市">
+						<img class="img-right" src="img/right.png">
+					</li>
+					<li class="form-li">
+						<span class="SQ-title">籍贯</span>
+						<input type="text"  name="" class="shuru" placeholder="请选择您的籍贯">
+						<img class="img-right" src="img/right.png">
+					</li>
+					<li class="form-li">
+						<span class="SQ-title">起始地</span>
+						<input type="text" name="" class="shuru" placeholder="请输入您的常跑起始地">
+						<img class="img-right" src="img/right.png">
+					</li>
+					<li class="form-li">
+						<span class="SQ-title">目的地</span>
+						<input type="text" name="" class="shuru" placeholder="请输入您的常跑目的地">
+						<img class="img-right" src="img/right.png">
+					</li>
+					<li class="form-li li-last" style="margin-top:10px;">
+						<span class="SQ-title" >驿站信息</span>
+						<input type="text" name="" class="shuru YZ1" placeholder="为您的驿站起个名吧，最多15字"><br>
+						<input type="text" name="" class="shuru YZ2" placeholder="简述您近几年助人为乐的故事吧，需包含时间地点人物，事情经过，最多400字" emptyok="false" size="10" maxlength="300">
+					</li>
+					
+					<li class="form-li" style="margin-top:10px;margin-bottom:10px;">
+						<span class="SQ-title">邀请工号</span>
+						<input type="text" name="" class="shuru" placeholder="请输入您的传化员工工号">
+					</li>
+				</form>
+				<button class="btn" style="background:#dfdfdf ">提交申请</button>	
+			</div>
+
+		</div>
+
+		<!-- js引入 -->
+		<script type="text/javascript" src="../../common/js/lib/zepto.min.js" ></script>
+		<script type="text/javascript" src="../../common/js/lib/fastclick.js" ></script>
+		<script type="text/javascript" src="../../common/js/weiget/tool-fun.js" ></script>
+		<script type="text/javascript" src="../../common/js/weiget/base.js" ></script>
+		<script type="text/javascript" src="../../common/js/api/api-com.js" ></script>
+		<script type="text/javascript" src="js/main.js" ></script>
+	</body>  
+</html>

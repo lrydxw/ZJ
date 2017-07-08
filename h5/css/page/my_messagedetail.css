@@ -1,0 +1,135 @@
+.rt{
+    font-size: 0.75rem;
+    margin: 0.625rem 0 1.187rem 0.875rem;
+}
+.mt45{
+    margin-top: 45px;
+}
+.reg-info{
+    height: 2.593rem;
+    line-height: 2.593rem;
+    background-color: #fff3b9;
+    font-size: 0.813rem;
+    color: #ff871c;
+    text-indent: 0.938rem;
+}
+.reg-info i{
+    display: inline-block;
+    width: 0.438rem;
+    height: 2.593rem;
+    position: absolute;
+    top: 0;
+    right: 0.938rem;
+    background: transparent url(../img/fs-close.png) no-repeat center center;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+}
+.receiver{
+    border-top: 1px solid #EFEFEF;
+    background-color: #fff;
+    overflow: hidden;
+}
+.re-data{
+    max-height: 9.5rem;
+    overflow-y: auto;
+}
+.re-data .item{
+    width: 25%;
+    height: 4.75rem;
+    display: inline-block;
+    float: left;
+    color: #999;
+    text-align: center;
+}
+.item span.name{
+    font-size: 0.75rem;
+    margin-top: 0.594rem;
+}
+.re-data{
+    margin: 0 1.4rem;
+    transition: max-height 2s ease-in .1s;
+    -webkit-transition: max-height .5s ease-out 0s;
+}
+.item .user-img{
+    display: inline-block;
+    width: 2.563rem;
+    height: 2.6rem;
+    background: transparent url(../img/user-img.png) no-repeat center center;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    position: relative;
+    margin: 0 auto;
+}
+.item .add-icon{
+    display: inline-block;
+    width: 0.82rem;
+    height: 0.887rem;
+    background: transparent url(../img/user-add.png) no-repeat 0 0;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.arrow-down{
+    height: 1.093rem;
+    background: #fff url(../img/arrow-down.png) no-repeat center center;
+    -webkit-background-size: 0.719rem auto;
+    background-size: 0.719rem auto;
+    margin-bottom: 0.938rem;
+}
+
+.send-msg{
+    overflow: hidden;
+    padding-bottom: 0.938rem;
+    background-color: #efefef;;
+}
+.arrow-down.active{
+    /*background: #fff url(../img/arrow-up.png) no-repeat center center;*/
+    /*-webkit-background-size: 0.719rem auto;*/
+    /*background-size: 0.719rem auto;*/
+    -webkit-transform-origin: center center;
+    -webkit-transform: rotate(180deg);
+}
+.sm-left{
+    width: 2.5rem;
+    height: 2.813rem;
+    float: left;
+    margin-left: 0.938rem;
+    margin-right: 0.469rem;
+    background: transparent url(../img/user-img.png) no-repeat 0 0;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+}
+.sm-right{
+    margin-right: 0.969rem;
+    margin-left: 4.5rem;
+    padding: 0.968rem;
+    background-color: #fff;
+    border-radius: 5px;
+    /*overflow: hidden;*/
+    position: relative;
+}
+.sm-right .sm-content{
+    color: #3f3f3f;
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+.sm-right .dialog{
+    display: inline-block;
+    width: 0.375rem;
+    height: 0.625rem;
+    background: transparent url(../img/dialog-box_02.png) no-repeat 0 0;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    position: absolute;
+    top: 10px;
+    left: -0.219rem;
+}
+.sm-right .sm-time{
+    font-size: 0.75rem;
+    color: #999;
+    float: right;
+    margin-top: 0.469rem;
+}
+

@@ -1,0 +1,158 @@
+@charset "utf-8";
+.findGoodsTitle {
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: center;
+	float: left;
+}
+.commonInput.center {
+	border-bottom: none;
+}
+.commonInput.fgInput {
+	padding-left: 55px;
+}
+.commonButton {
+	box-shadow: 0 0 5px #f1f1f1;
+	-webkit-user-select: none;
+	user-select: none;
+}
+.posfixed {
+	-webkit-backface-visibility: hidden;
+}
+.posr {
+	position: relative;
+}
+.address_list{
+    top: 48px;
+    min-height: 100%;
+    display: none;
+}
+.address_list li {
+	background: #FFF;
+	position: relative;
+	border-bottom: 1px solid #DADADA;
+}
+.h100 {
+	height: 100px;
+	margin-top: 70px;
+}
+.h50,
+.h50 .fgTop.left,
+.h50 .commonInput.start {
+	height: 50px;
+	min-height: 50px;
+}
+.h50 .commonInput.fgInput,
+.h50 .commonInput {
+	padding: 0 0 0 40px;
+	background-position: 5px 2px;
+	height: 40px;
+	/*line-height: 40px;*/
+	min-height: 40px;
+}
+#fg3 .commonInput {
+	padding-left: 8px;
+}
+.surebtn {
+	float: left;
+	width: 15%;
+	margin-left: 3%;
+	height: 40px;
+	border: none;
+	line-height: 40px;
+	font-size: 16px;
+	/*box-shadow: 0 0 3px #444;*/
+	
+	margin-top: 5px;
+	text-align: center;
+	color: #fff;
+	background: #41b6f4;
+}
+.bggray {
+	background-color: #f6f6f6;
+}
+.area-wrap .zoneparent {
+	color: #3B98F2;
+}
+.mt10 {
+	margin-top: 10px;
+}
+.commonDiv {
+	position: relative;
+}
+.iconbox {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 50%;
+	left: 10px;
+	margin-top: -10px;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+.small_icon {
+	/*-webkit-background-size: 86%;
+	background-size: 86%;
+	margin-top: -13px;*/
+}
+.start {
+	background-image: url(./qidian@2x.png);
+}
+.end {
+	background-image: url(./zhongdian@2x.png);
+}
+.search {
+	background-image: url(../img/search.png);
+}
+.l6 {
+	left: 6px;
+}
+.address_item .icon {
+	position: absolute;
+	width: 15px;
+	height: 20px;
+	left: 5%;
+	top: 50%;
+	margin-top: -10px;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	background-image: url(./address_icon2x.png);
+	background-repeat: no-repeat;
+}
+.btnone {
+	border-top: none;
+}
+.pyname {
+	display: none;
+}
+.bodyMain {
+	overflow: hidden;
+}
+.fgTop.top1 {
+	width: 100%;
+	overflow: hidden;
+	background-color: #F9F9F9;
+}
+.fgTop.left {
+	background-color: #F9F9F9;
+}
+.fgTop.right.type1 {
+	float: left;
+	width: 85%;
+	text-align: center;
+	font-size: 18px;
+	color: #3F3F3F;
+	background-color: #F9F9F9;
+	line-height: 40px;
+	margin-left: -3%;
+	position: relative;
+	z-index: 1;
+}
+.heightFg.type1 {
+	display: block;
+}
+.address_item span{
+	font-size: 14px;
+}

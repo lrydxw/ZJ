@@ -1,0 +1,37 @@
+@charset "utf-8";
+/*class  -连接*/
+.lg-div{
+	border: 1px solid #dfdfdf;
+	position: relative;
+}
+.lg-div:first-child{
+	margin-top: 2.0rem;
+	border-bottom: 0;
+}
+.lg-inp{
+	padding-left: 2.5rem;
+	background-size:1.0rem;
+	background-position: 0.625rem 1.0rem;
+	background-repeat: no-repeat;
+}
+.login-menber{
+	background-image: url(../img/login-menber.png);
+}
+.login-pw{
+	background-image: url(../img/login-pw.png);
+}
+.bt-div{
+	margin-top: 2.0rem;
+}
+.lab-span{
+	font-size: 1.0rem;
+	position: absolute;
+	left: 1.0rem;
+}
+.kf-div{
+	margin-top: 4.0rem;
+	height: 2.0rem;
+	text-align: center;
+	color: #999999;
+	font-size: 0.875rem;
+}

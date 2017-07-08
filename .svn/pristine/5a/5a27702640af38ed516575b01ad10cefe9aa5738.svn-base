@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <title>陆鲸白条使用规则</title>
+		<!-- css引入 -->
+		<link rel="stylesheet" href="../../common/style/reset-min.css" />
+		<link rel="stylesheet" href="../../common/style/common.css" />
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body class="body-bg">
+		<!--主体-->
+		<div class="body-main">
+			<!--内容-->
+			<div class="body-content">
+				<table class="table-print">
+					<tbody>
+						<tr>
+							<td colspan="4" class="toptd">“陆鲸白条”放款申请书</td>
+						</tr>
+						<tr>
+							<td>执行保理<br/>合同号</td>
+							<td colspan="3"></td>
+						</tr>
+						<tr>
+							<td>序号</td>
+							<td colspan="3"></td>
+						</tr>
+						<tr>
+							<td>融资人</td>
+							<td colspan="3">企业名称</td>
+						</tr>
+						<tr>
+							<td >融资用途</td>
+							<td colspan="3">企业名称</td>
+						</tr>
+						<tr>
+							<td >融资金额</td>
+							<td colspan="3">
+								<table class="table-clear" style="width:100%">
+									<tr>
+										<td style="width:66%;border-right:1px solid #c3c9d5;border-bottom:1px solid #c3c9d5" colspan="2" >陆鲸白条总额度(元)</td>
+										<td style="border-bottom:1px solid #c3c9d5" colspan="1"></td>
+									</tr>
+									<tr>
+										<td style="width:66%;border-right:1px solid #c3c9d5"  colspan="2">本笔申请放款金额(元)</td>
+										<td ></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+
+						<tr>
+							<td>年利率</td>
+							<td colspan="3"></td>
+						</tr>
+						<tr>
+							<td>放款日期</td>
+							<td colspan="3"></td>
+						</tr>
+						<tr>
+							<td>到期日期</td>
+							<td colspan="3"></td>
+						</tr>
+						<tr>
+							<td rowspan="3">指定收款<br/>账户(本笔)</td>
+							<td style="width:30%">账户名</td>
+							<td colspan="2"></td>
+						</tr>
+						<tr>
+							<td >支付账号</td>
+							<td colspan="2"></td>
+						</tr>
+						<tr>
+							<td >开户行</td>
+							<td colspan="2">传化支付</td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<p class="td-p"><b>免责声明：</b>上述支付信息，我已核对无误</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- js引入 -->
+		<script type="text/javascript" src="../../common/js/lib/zepto.min.js" ></script>
+		<script type="text/javascript" src="../../common/js/lib/fastclick.js" ></script>
+		<script type="text/javascript" src="../../common/js/weiget/tool-fun.js" ></script>
+		<script type="text/javascript" src="../../common/js/weiget/base.js" ></script>
+		<script type="text/javascript" src="../../common/js/api/api-com.js" ></script>
+		<script type="text/javascript" src="main.js" ></script>
+	</body>
+</html>

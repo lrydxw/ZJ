@@ -1,0 +1,30 @@
+html,body{
+  background-color: #f7f7f7;
+}
+.detalTitle{
+  display: block;
+  line-height: 20px;
+  border-bottom: 2px solid #f7f7f7;
+  padding: 16px 0 12px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #20304b;
+}
+.detailContent{
+  padding: 10px 17px 24px 23px;
+  font-size: 14px;
+  color: #68758e;
+  display: block;
+}
+.apartDiv{
+  height: 10px;
+  background-color: #f7f7f7;
+}
+.detailContent P{
+  margin-bottom: 6px;
+  line-height: 20px;
+}
+.rulesContent{
+  color: #68758E;
+  font-size: 14px;
+}

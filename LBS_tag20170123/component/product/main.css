@@ -1,0 +1,72 @@
+.product-banner-box{
+	font-size: 42px;
+	color: #FFFFFF;
+	position: relative;
+}
+.product-banner-box p{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	margin-top: -27.5px;
+	text-align: center;
+}
+.product-banner{
+	width: 100%;
+	height: auto;
+}
+.right-fillimg{
+	width: 801px;
+	height: 340px;
+	background: no-repeat center center url(chinaMapFill.png);
+	background-size:801px;
+	position: relative;
+}
+.right-qh{
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+	width: 200px;
+}
+.right-qh li{
+	display: inline-block;
+	margin-left: 20px;
+	margin-top: 10px;
+	font-size: 10px;
+	padding-left: 18px;
+	position: relative;
+	cursor:pointer;
+	color: #666666;
+}
+.right-qh li i{
+	width: 8px;
+	height: 8px;
+	position: absolute;
+	left: 0;
+	top: 4px;
+}
+.li1 i{
+	background-color:#00A388;
+}
+.li2 i{
+	background-color:#FF6138;
+}
+.li3 i{
+	background-color:#79BD8F;
+}
+.li4 i{
+	background-color:#E0E056;
+}
+.li5 i{
+	background-color:#FFCA52;
+}
+.li6 i{
+	background-color:#BEEB9F;
+}
+#chinaMap{
+	display: block;
+	width: 334px;
+	height: 276px;
+	margin: 0 auto;
+	padding-top: 20px;
+	border: 0;
+}

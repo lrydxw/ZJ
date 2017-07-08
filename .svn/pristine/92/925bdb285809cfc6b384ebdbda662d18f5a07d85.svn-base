@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no,width=device-width" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>积分明细</title>
+  <!-- css引入 -->
+  <link rel="stylesheet" href="../../common/style/reset-min.css" />
+  <link rel="stylesheet" href="../../common/style/common.css" />
+  <link rel="stylesheet" href="../../common/style/tf-pop-sp.css" />
+  <link rel="stylesheet" href="scoreDetail.css" />
+</head>
+
+<body class="body-bg">
+  <!--主体-->
+  <div class="body-main">
+    <!--内容-->
+    <div class="body-content">
+      <!--积分详情-->
+      <div class="tab">
+					<div class="tabItem activeTarget" data-value="">
+            全部
+					</div>
+					<div class="tabItem" data-value="in">
+            收入
+					</div>
+          <div class="tabItem" data-value="out">
+            支出
+					</div>
+			</div>
+      <div class="scoreDetail" >
+      </div>
+    </div>
+    <!-- js引入 -->
+
+    <!-- <script type="text/javascript" src="../../common/js/lib/zepto.min.js"></script> -->
+    <script type="text/javascript" src="../../common/js/lib/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../../common/js/lib/fastclick.js"></script>
+    <script type="text/javascript" src="../../common/js/weiget/tool-fun.js"></script>
+    <script type="text/javascript" src="../../common/js/weiget/tf-popup-sp.js"></script>
+    <script type="text/javascript" src="../../common/js/weiget/base.js"></script>
+    <script type="text/javascript" src="../../common/js/api/api-com.js"></script>
+    <script type="text/javascript" src="../../common/js/weiget/scrollLoading.js"></script>
+    <script type="text/javascript" src="scoreDetail.js"></script>
+    <script>
+      try{
+        window.tf56.setTitle(document.getElementsByTagName("title")[0].innerHTML)
+      }catch(e){
+        console.log(e)
+      }
+    </script>
+</body>
+
+</html>

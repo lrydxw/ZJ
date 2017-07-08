@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <title>短信详情</title>
+    <link rel="stylesheet" href="../css/common/resetnew-min.css"/>
+    <link href="../css/common/common.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="../css/page/my_messagedetail.css"/>
+</head>
+<body class="body-bg">
+<div class="bodyMain">
+    <div class="bodyTop">
+        <i class="more_icon hid"></i>
+
+        <div class="nvbt iback" onclick="backFun()"></div>
+        <div class="nvtt">短信详情</div>
+    </div>
+    <div class="mt45"></div>
+    <div class="reg-info fn-re J_regInfo" style="display: none;">加入车队的成员可享受对他免费电话<i></i></div>
+    <div style="background-color: #EFEFEF;">
+        <div class="receiver">
+            <p class="fn-cGray9 rt">收件人(16)</p>
+
+            <div class="re-data fn-overflowH">
+
+            </div>
+        </div>
+        <div class="send-msg">
+            <div class="arrow-down" data-type="close" style="visibility: hidden;"></div>
+            <div class="sm-left"></div>
+            <div class="sm-right clearfix">
+                <!--<p class="sm-content">哈哈哈三角函数精神损失色即是空是就是你开始</p>-->
+                <!--<p class="sm-time">16:23已发送</p>-->
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="../js/weiget/mune.js"></script>
+<script src="../js/lib/fastclick.js"></script>
+<script type="text/javascript" src="../js/lib/zepto.min.js"></script>
+<script type="text/javascript" src="../js/common/data.js"></script>
+<script type="text/javascript" src="../js/weiget/getJsonp.js"></script>
+<script src="../js/weiget/owner_extend.js"></script>
+<script type="text/javascript" src="../js/page/owner_messagedetail.js"></script>
+<script>
+    hideMenu();
+</script>
+</body>
+
+</html>

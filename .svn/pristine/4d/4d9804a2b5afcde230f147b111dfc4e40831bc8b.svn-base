@@ -1,0 +1,55 @@
+
+html,body{
+	background: #f7f7f7;
+	min-height: 100%;
+}
+.billTotal{
+	/*height: 1.67rem;*/
+	padding: 7px 12px;
+	background: #f7f7f7;
+}
+.billDate{
+	font-size: 14px;
+	line-height: 14px;
+	color: #68758e;
+}
+.billCount{
+	font-size: 18px;
+	line-height: 18px;
+	color: #20304B;
+  margin-top: 10px;
+}
+.billCount1{
+	font-size: 12px;
+	line-height: 12px;
+	color:#68758e;
+	text-align:right;
+}
+.billCount0{
+	font-size: 18px;
+}
+.billItem{
+  display: flex;
+  justify-content: space-between;
+	padding: 14px 12px;
+	box-shadow:inset 0 0 0 0 #dfdfdf;
+	position: relative;
+	background: #FFFFFF;
+	border-bottom: 1px solid #F7F7F7;
+}
+.billItemRight{
+	display: flex;
+	align-items: center;
+}
+.toBillDetail{
+  width:14px;
+  height:14px;
+  margin-left: 8px;
+  background-image:url('img/right_sub.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.loading{
+	text-align: center;
+	line-height: 40px;
+}

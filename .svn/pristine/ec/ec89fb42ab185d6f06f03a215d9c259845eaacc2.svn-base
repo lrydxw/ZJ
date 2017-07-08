@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <title>月账单</title>
+		<!-- css引入 -->
+		<link rel="stylesheet" href="../../common/style/reset-min.css" />
+		<link rel="stylesheet" href="../../common/style/common.css" />
+		<link rel="stylesheet" href="../../common/style/tf-pop-sp.css" />
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body class="body-bg">
+		<!--主体-->
+		<div class="body-main">
+			<!--内容-->
+			<div class="body-content">
+				<a href="../allBillRecord/allBillRecord.html" class="bill-tips" style="display:none">
+					账单月份
+					<label init="month"></label>
+				</a>
+                <div class="bill-detail">
+					<div class="time" id="repaymentDay" style="display:none">最后还款日&nbsp;</div>
+					<div class="money" init="money">剩余应还&nbsp;&nbsp;¥ 0.00</div>
+                </div>
+                <div class="bill-day" init="billDetail"></div>
+                <div class="bill-list" id="billList" style="display:none">
+                	
+                </div>
+                <div class="bill-no" style="display:none">
+                <img src="./statics/empty_bill@3x.png" alt="">
+                账单太干净啦，快去使用陆鲸白条吧
+                </div>
+                <div class="bill-btn" id="billBtn" style="display:none">
+                	<input type="text" value="¥ 0.00" readonly="true" id="billMoney">
+					<div class="bill-submit" id="billSumit">立即还款</div>
+                </div>
+			</div>
+		</div>
+		<!-- js引入 -->
+		<script type="text/javascript" src="../../common/js/lib/zepto.min.js" ></script>
+		<script type="text/javascript" src="../../common/js/lib/fastclick.js" ></script>
+		<script type="text/javascript" src="../../common/js/weiget/tool-fun.js" ></script>
+		<script type="text/javascript" src="../../common/js/weiget/base.js" ></script>
+		<script type="text/javascript" src="../../common/js/weiget/tf-popup-sp.js" ></script>
+		<script type="text/javascript" src="../../common/js/api/api-com.js" ></script>
+		<script type="text/javascript" src="main.js" ></script>
+	</body>
+</html>

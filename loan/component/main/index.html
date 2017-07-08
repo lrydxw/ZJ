@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <title>陆鲸白条</title>
+		<!-- css引入 -->
+		<link rel="stylesheet" href="../../common/style/reset-min.css" />
+		<link rel="stylesheet" href="../../common/style/common.css" />
+		<link rel="stylesheet" href="../../common/style/tf-pop-sp.css" />
+		<link rel="stylesheet" href="main.css" />
+		<style type="text/css">
+			.no-detail{
+			height:21rem;
+			text-align: center;
+			font-size:1rem;
+			color:#68758e;
+			line-height:1.5rem;
+			overflow: hidden;
+		}
+		.no-detail img{
+			display: block;
+			width: 10rem;
+			margin:3rem auto 0;
+		}
+		</style>
+	</head>
+	<body class="body-bg">
+		<!--主体-->
+		<div class="body-main">
+			<!--内容-->
+			<div class="body-content">
+				<a href="#" class="money-tips" id="moneyBill" style="display:none;"><img src="./statics/list_arrow_orange@3x.png"></a>
+				<a href="#" class="money-tips" id="moneyStatus"  style="display:none;"><img src="./statics/list_arrow_orange@3x.png"></a>
+				
+                <div class="money-detail" >
+                	<div class="money-bill">
+                		<div class="money-subtitle">可用额度</div>
+                		<div class="money-msg">
+                			<span class="billM" init="availAmount" >¥0.00</span>
+                			<label class="time-limit" init="totalMoney" >总额度：¥0.00</label>
+                		</div>
+                	</div>
+	                <div class="money-bar">
+						<a class="money-use money-left" href="../billDetail/index.html?type=week">
+							<span class="t" id="weekBill">近7日应还</span>
+							<span class="num can" init="weekRepayAmount">¥0.00</span>
+						</a>
+						<a class="money-use" href="../billDetail/index.html?type=all">
+							<span class="t">所有应还</span>
+							<span class="num" init="allRepayAmount">¥0.00</span>
+						</a>
+					</div>
+                	<a class="money-tool" href="../loanRecord/loanRecord.html" >
+                		<span class="title">借还记录</span>
+                		<span class="dir"><img src="./statics/right_sub.png"></span>
+                	</a>
+                </div>
+                <a class="money-help" href="../help/index.html"><img src="./statics/caption_lujing@3x.png" alt="">白条说明</a>
+			</div>
+		</div>
+		<!-- js引入 -->
+		<script type="text/javascript" src="../../common/js/lib/zepto.min.js" ></script>
+		<script type="text/javascript" src="../../common/js/lib/fastclick.js" ></script>
+		<script type="text/javascript" src="../../common/js/weiget/tool-fun.js" ></script>
+		<script type="text/javascript" src="../../common/js/weiget/base.js" ></script>
+		<script type="text/javascript" src="../../common/js/weiget/tf-popup-sp.js" ></script>
+		<script type="text/javascript" src="../../common/js/api/api-com.js" ></script>
+		<script type="text/javascript" src="main.js" ></script>
+		<script type="text/javascript">
+		//页面资源加载失败预处理
+		try{
+			Zepto
+		}catch(e){
+			document.getElementById("noDetail").innerHTML=document.getElementById("noDetail").innerHTML+"网络错误请重试"
+		}
+		
+		</script>
+	</body>
+</html>

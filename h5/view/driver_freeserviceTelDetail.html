@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <title>免费电话</title>
+    <script src="../js/weiget/g.js"></script>
+	<link rel="stylesheet" href="../css/common/resetnew-min.css" charset="utf-8">
+	<link rel="stylesheet" href="../css/common/common.css" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="../css/page/my_freeserviceTelDetail.css" title="no title" charset="utf-8">
+</head>
+<body class="body-bg fadeIn">
+<div class="bodyMain fn-overflowH  ft-smooth" >
+    <div class="bodyTop">
+        <i class="more_icon hid"></i>
+        <div class="nvbt iback" onclick="backFun()"></div>
+        <div class="nvtt">详情</div>
+    </div>
+    <div class="summary mt49 fn-cWhite">
+        <p class="sum-1 ft-r24">本月已用免费电话时长</p>
+        <p class="sum-2"><span class="ft-r70" ng-bind="calledtime"></span><span class="ft-r24">分钟</span></p>
+    </div>
+    <div class="history-title">通话历史</div>
+    <ul class="history">
+        <!--<li>-->
+            <!--<div class="detail">-->
+                <!--<div class="dmr">-->
+                    <!--<p class="dt-1">张三</p>-->
+                    <!--<p class="dt-2">通话时长20分钟30秒</p>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="date">-->
+                <!--<p class="dt-3">18:08</p>-->
+            <!--</div>-->
+        <!--</li>-->
+    </ul>
+    <div class="loadmorebtn sp hid">点击加载更多数据</div>
+</div>
+
+<script src="../js/lib/zepto.min.js" charset="utf-8"></script>
+<script src="../js/lib/zepto.data.js" charset="utf-8"></script>
+<script src="../js/lib/fastclick.js" charset="utf-8"></script>
+<script src="../js/weiget/base.js" charset="utf-8"></script>
+<script src="../js/lib/ngRender.js" charset="utf-8"></script>
+<script src="../js/common/data.js" charset="utf-8"></script>
+<script src="../js/common/contactApi.js" charset="utf-8"></script>
+<script src="../js/weiget/mune.js" charset="utf-8"></script>
+<script src="../js/weiget/driver_extend.js" charset="utf-8"></script>
+<script src="../js/weiget/getJsonp.js" charset="utf-8"></script>
+<script src="../js/weiget/simplePie.js" charset="utf-8"></script>
+<script src="../js/page/driver_freeserviceTelDetail.js" charset="utf-8"></script>
+<script type="text/javascript">
+	if(G.mobileSystem.ios){
+		$('.bodyTop').css('display','none')
+        $('.summary').removeClass('mt49')
+	}
+    var vCode = getParamVal('vCode');
+	if(vCode/1>=20170222){
+		$('.bodyTop').hide()
+		$('.bodyContent').css('marginTop','0');
+	}
+</script>
+</body>
+
+</html>

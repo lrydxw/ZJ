@@ -1,0 +1,155 @@
+/**
+*  通用弹出组件
+*/
+
+/*弹出框基本样式：begin*/
+.tf-pop_ground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(20,20%,20%,0.3);
+    z-index: 1000;
+}
+.tf-pop_content {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    margin: 5%;
+    width: 90%;
+    border-radius: 4px;
+    margin-top: -66px;
+}
+.tf-pop_foot {
+    border-top: 1px solid #DADADA;
+    height: 28px;
+    font-size: 16px;
+}
+.tf-pop_title .ok {
+    width: 24px;
+    height: 24px;
+    background:#f7f7f7 url(../img/pop-ok-icon.png) no-repeat center center;
+    background-size: 24px auto;
+    margin-right: 10px;
+}
+/*.tf-pop_title {*/
+    /*font-size: 16px;*/
+    /*text-align: center;*/
+    /*margin-top: 20px;*/
+    /*margin-bottom: 20px;*/
+/*}*/
+.tf-pop_title {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 0 20px;
+    line-height: 1.6;
+    padding: 0 12px;
+    line-height: 1.6;
+}
+.tf-pop_title i,.tf-pop_title span{
+    display: inline-block;
+    height: inherit;
+    vertical-align: top;
+}
+.tf-pop_smallFont {
+    margin: 15px 0 40px 0;
+    text-align: center;
+}
+.tf-pop_foot .tf-pop_btn {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+    width: 49%;
+    float: left;
+    line-height: 28px;
+    text-align: center;
+    color: #3295f2;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.tf-pop_foot .tf-pop_btn:first-child {
+    border-right: 1px solid #DADADA;
+}
+.tf-pop-orange{
+    color: #ff6230;
+}
+.tf-pop-num{
+    margin: 15px 20px -14px 15px;
+    border-top: 1px solid #dadada;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+/*弹出框基本样式：begin*/
+
+/*密码框：Begin*/
+.psw_div1 {
+    display: block;
+    float: left;
+    border: none;
+    border: 1px solid #DADADA;
+    border-left:0px;
+    line-height: 63px;
+    height: 60px;
+    width: 16.6666%;
+    background-color: #FFFFFF;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.psw_div1:first-child{
+    border-left: 1px solid #DADADA;
+}
+.psw_point {
+    padding: 0 5px;
+    height: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #000000;
+    display: inline-block;
+    color: #fff;
+}
+.psw_input {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    height: 60px;
+    background-color: #FFFFFF;
+    width: 100%;
+    margin-top: 1px;
+}
+.psw_div {
+    width: 100%;
+    height: 60px;
+}
+/*密码框：End*/
+
+.tf-pop_title .voice_icon{
+	display: block;
+	margin: auto;
+	margin-bottom: 10px;
+	width: 80px;
+	height: 80px;
+	vertical-align: middle;
+	background-image: url(../img/voicecode-icon.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	-webkit-background-size: 100%;
+}
+.tf-pop_ground span{
+	font-size: 16px;
+	line-height: 16px;
+	padding: 8px 0;
+}
+.tf-pop_ground span br{
+	font-size: 20px;
+	line-height: 20px;
+}
+.hid{
+    display: none;
+}

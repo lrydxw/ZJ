@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <title>免费电话</title>
+    <script src="../js/weiget/g.js"></script>
+    <link rel="stylesheet" href="../css/common/resetnew-min.css">
+    <link rel="stylesheet" href="../css/common/common.css">
+    <link rel="stylesheet" href="../css/page/owner_freeservice_sp.css">
+</head>
+<body class="fadeIn">
+<div class="bodyMain fn-overflowH">
+    <div class="bodyTop">
+        <i class="more_icon hid"></i>
+        <div class="nvbt iback" onclick="window.tf56&&window.tf56.finishPage()"></div>
+        <div class="nvtt">免费电话</div>
+    </div>
+    <div class="mt49"></div>
+    <a class="fn-blcok reg-info J_regInfo ft-a-reset" style="display: none;" href="javascript:window.tf56&&window.tf56.jumpToUserCertificate()">完成会员认证即可享受更多优惠<i></i></a>
+    <a class="fn-blcok" href="owner_activityDetail.html" style="display: none;">
+        <img src="../css/img/fs-banner.jpg"  class="w_one" alt="活动banner"/>
+    </a>
+    <!--tab：begin-->
+    <div class="fs-tab after-scale" style="display: none">
+        <div class="float_two">
+            <span class="tab-text">免费电话</span>
+        </div>
+        <div class="float_two active">
+            <span class="tab-text">免费流量</span>
+        </div>
+    </div>
+    <!--tab：end-->
+
+    <!--免费电话：begin-->
+    <div class="tab-item">
+        <div class="tel-box box-mt">
+            <div class="fn-tc block-center canbg">
+                <div id="canvas-bk">
+                    <canvas id="canvasTel"></canvas>
+                </div>
+                <br/>
+                <a class="simple-btn J_ty" ng-bind="btnText" ng-href="btnLink">立即体验</a>
+            </div>
+            <ul class="ft-detail">
+                <li class="ft-li after-scale">
+                    <span class="ft-li-span fn-fl fn-cGray9 ft-r24">本月赠送免费电话(分钟)</span>
+                    <span class="ft-li-span fn-fr fn-c25 ft-r32" ng-bind="totalTime" data-txt="">&nbsp;</span>
+                </li>
+                <li class="ft-li after-scale">
+                    <span class="ft-li-span fn-fl fn-cGray9 ft-r24">已用免费电话(分钟)</span>
+                    <span class="ft-li-span fn-fr fn-c25 ft-r32" ng-bind="calledtime" data-txt="">&nbsp;</span>
+                </li>
+                <li class="ft-li after-scale">
+                    <span class="ft-li-span fn-fl fn-cGray9 ft-r24">剩余可用免费时长(分钟)</span>
+                    <span class="ft-li-span fn-fr fn-c25 ft-r32" ng-bind="remainTime" data-txt="">&nbsp;</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--免费电话：end-->
+
+    <!--当月流量概况：begin-->
+    <div class="tab-item J_flow">
+        <div class="flow-box">
+            <div class="fs-flow fn-re">
+                <img src="../css/img/flow-bg.png" alt="背景" class="w_one"/>
+                <div class="fn-abs flow-content">
+                    <div class="flow-img">
+                        <p>本月已使用</p>
+                        <p ng-bind="usedTrafficText"></p>
+                    </div>
+                    <!--<p class="fc-1">本月已使用流量</p>-->
+                    <!--<p class="fc-2" ng-bind="usedTrafficText">&nbsp;</p>-->
+                    <!--<p class="fc-3" ng-bind="trafficNextText">&nbsp;</p>-->
+                    <!--<p class="month-get opacity0">送上月30M流量<button class="month-btn">立即领取</button></p>-->
+                    <!--<div class="chart-box">-->
+                    <!--<div class="fc-chart">-->
+                    <!--<span class="fc-bar">-->
+                    <!--<span class="fc-circle"></span>-->
+                    <!--</span>-->
+                    <!--<i class="fc-circle-s l33">-->
+                    <!--<span class="fn-abs fcst">10M</span>-->
+                    <!--</i>-->
+                    <!--<i class="fc-circle-s pos_right">-->
+                    <!--<span class="fn-abs fcst">30M</span>-->
+                    <!--</i>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+            <div class="flow-des">
+                <p class="fc-des">
+                    注：本流量仅统计使用陆鲸APP产生的流量，领取后预计1小时后到账
+                </p>
+            </div>
+        </div>
+        <div class="common-remBox before-scale hid">
+            <ul class="flow-history">
+                <!--<li class="after-scale">-->
+                <!--<span class="fh-abs left">10月</span>-->
+                <!--<div class="center fn-pl10">使用40M,送上月70M流量</div>-->
+                <!--<span class="fh-abs right fn-tr">夷陵区</span>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<span class="fh-abs left">10月</span>-->
+                <!--<div class="center fn-pl10">使用40M,送上月70M流量</div>-->
+                <!--<span class="fh-abs right fn-tr"><button class="li-btn">立即领取</button></span>-->
+                <!--</li>-->
+            </ul>
+            <div class="loadmorebtn sp hid">点击加载更多</div>
+        </div>
+    </div>
+    <!--当月流量概况：end-->
+</div>
+
+<script src="../js/lib/zepto.min.js" charset="utf-8"></script>
+
+<script src="../js/lib/zepto.data.js" charset="utf-8"></script>
+<script src="../js/lib/fastclick.js" charset="utf-8"></script>
+<script src="../js/weiget/base.js" charset="utf-8"></script>
+<script src="../js/lib/ngRender.js" charset="utf-8"></script>
+<script src="../js/common/data.js" charset="utf-8"></script>
+<script src="../js/common/contactApi.js" charset="utf-8"></script>
+<script src="../js/weiget/mune.js" charset="utf-8"></script>
+<script src="../js/weiget/owner_extend.js" charset="utf-8"></script>
+<script src="../js/weiget/getJsonp.js" charset="utf-8"></script>
+<script src="../js/weiget/simplePie.js" charset="utf-8"></script>
+<script src="../js/common/ownerTradeApi.js" charset="utf-8"></script>
+<script src="../js/weiget/apiCommon.js" charset="utf-8"></script>
+<script src="../js/page/owner_freeservice_sp.js" charset="utf-8"></script>
+<script type="text/javascript">
+    if(mobileSystem.ios){
+        $('.bodyTop').css('display','none')
+        $('.mt49').css('display','none')
+    }
+</script>
+<script>
+    var finishpage = getParamVal('finishpage');
+    function gd_back(){
+        if(finishpage == '1'){
+            window.tf56&&window.tf56.finishPage();
+        }else{
+            backFun();
+        }
+    }
+    hideMenu();
+    var canvasWid = parseFloat($('#canvasTel').css('width'));
+    $('#canvas-bk').css({'width':canvasWid+"px",'height':canvasWid+"px"});
+    var vCode = getParamVal('vCode');
+	if(vCode/1>=20170222){
+		$('.mt49').hide()
+	}
+</script>
+</body>
+
+</html>

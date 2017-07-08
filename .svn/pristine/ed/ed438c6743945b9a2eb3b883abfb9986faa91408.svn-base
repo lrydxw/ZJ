@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <title>爱心驿站</title>
+		<!-- css引入 -->
+		<link rel="stylesheet" href="../../common/style/reset-min.css" />
+		<link rel="stylesheet" href="../../common/style/common.css" />
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body class="body-bg">
+		<!--主体-->
+		<div class="body-main">
+			<!--内容-->
+			<div class="body-content">
+				<div id="activeRule" class="active-rule"><img src="./statics/rule-btn.png" alt="活动规则"></div>
+				<div id="shareBox"  style="display:none;">
+					<img src="./statics/share-bg.png"  alt="爱心驿站活动规则" style="width: 100%;" >
+					<div class="stageInv"></div>
+					<a href="../rouseFail/index.html" class="apply-stage"><img src="./statics/share-btn.png" alt=""></a>
+					<div class="apply-detail">
+						<img src="./statics/stage-detail.png" alt="">
+						<a href="javascript:" class="apply-link" title="申请驿站长"  id="applyLink"></a>
+					</div>
+					<div class="join-detail">
+						<img src="./statics/join-detail.png" alt="">
+						<a href="javascript:" class="join-link" title="加入驿站" id="joinLink"></a>
+					</div>
+				</div>
+				<div id="stageBox" style="display:none;">
+					<img src="./statics/stage-bg.png" alt="爱心驿站活动规则" style="width: 100%;" >
+					<a href="../GY/index.html" class="apply-stage"><img src="./statics/apply-stage.png" alt=""></a>
+					<div class="apply-detail">
+						<img src="./statics/stage-detail.png" alt="">
+						<a href="javascript:" class="apply-link" title="申请驿站长"  id="applyLink"></a>
+					</div>
+					<a href="../stageList/list.html" class="join-stage"><img src="./statics/join-stage.png" alt=""></a>
+					<div class="join-detail">
+						<img src="./statics/join-detail.png" alt="">
+						<a href="javascript:" class="join-link" title="加入驿站" id="joinLink"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- js引入 -->
+		<script type="text/javascript" src="../../common/js/lib/zepto.min.js" ></script>
+		<script type="text/javascript" src="../../common/js/lib/fastclick.js" ></script>
+		<script type="text/javascript" src="../../common/js/weiget/tool-fun.js" ></script>
+		<script type="text/javascript" src="../../common/js/weiget/base.js" ></script>
+		<script type="text/javascript" src="../../common/js/api/api-com.js" ></script>
+		<script type="text/javascript" src="main.js" ></script>
+	</body>
+</html>

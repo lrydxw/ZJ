@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <title>DEMO</title>
+		<!-- css引入 -->
+		<link rel="stylesheet" href="address/fg.css">
+		<link rel="stylesheet" href="address/address.css">
+		
+		
+	</head>
+	<body class="body-bg" id="app">
+		<!--主体-->
+		
+		<div class="common-mbox">
+			<div class="fg-form fn-mb60">
+				<i class="fg-icon from"></i>
+				<input type="text" v-model="address.from" class="common-input-lg from addressInput J_address_from" placeholder="从哪出发"  data-list="3" data-upselect="0"/>
+				<br />
+				<i class="fg-icon to"></i>
+				<input type="text" v-model="address.to" class="common-input-lg to addressInput J_address_to" placeholder="到哪里去"   data-list="3" data-upselect="0" />
+				<button v-on:click="jumpToList(address,'record')" data-from="{{address.from}}" data-to="{{address.to}}" class="common-btn-lg blue fn-mt40">立即找货</button>
+			</div>
+		</div>
+		<!-- js引入 -->
+		<script type="text/javascript" src="address/vue.min.js" ></script>
+		<script type="text/javascript" src="address/zepto.min.js" ></script>
+		<script src="address/g.js"></script>
+		<script src="address/data.js"></script>
+		<script src="address/city.js"></script>
+		<script src="address/address_common.js"></script>
+		<script src="address/find_goods.js"></script>
+		
+	</body>
+</html>

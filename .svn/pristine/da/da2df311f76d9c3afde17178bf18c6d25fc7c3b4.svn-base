@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <title>白条说明</title>
+		<!-- css引入 -->
+		<link rel="stylesheet" href="../../common/style/reset-min.css" />
+		<link rel="stylesheet" href="../../common/style/common.css" />
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body class="body-bg">
+		<!--主体-->
+		<div class="body-main">
+			<!--内容-->
+			<div class="body-content">
+				<div class="qa-tool">
+            		<span class="title">一. 使用陆鲸白条条件：</span>
+            		<span class="dir"><img src="./statics/right_sub.png"></span>
+            	</div>
+            	<div class="qa-cont" >
+            	1、白条账户没有处于冻结和过期状态；<br/>
+				2、白条余额额度足够支付当次运费；<br/>
+				3、运费是否满足 500≤运费≤30000 元，且单公里运价≤20元（运费/公里数）；<br/>
+				4、是否有卸货地位置信息，且卸货地与运单目的地一致（城市级）；<br/>
+				5、运单里程≥50公里，运输时间≥ 运输里程/80 ；<br/>
+				以上条件需同时满足时，方可用白条支付运费；<br/>
+            	</div>
+            	<div class="qa-tool">
+            		<span class="title">二. 账户冻结/过期</span>
+            		<span class="dir"><img src="./statics/right_sub.png"></span>
+            	</div>
+            	<div class="qa-cont" >
+            		账户冻结：由于逾期未还、刷单行为等原因被平台冻结白条账户；<br/>
+					账户过期：由于超出授信有效期导致白条账户过期；
+            	</div>
+            	
+			</div>
+		</div>
+		<!-- js引入 -->
+		<script type="text/javascript" src="../../common/js/lib/zepto.min.js" ></script>
+		<script type="text/javascript" src="../../common/js/lib/fastclick.js" ></script>
+		<script type="text/javascript" src="../../common/js/weiget/tool-fun.js" ></script>
+		<script type="text/javascript" src="../../common/js/weiget/base.js" ></script>
+		<script type="text/javascript" src="../../common/js/api/api-com.js" ></script>
+		<script type="text/javascript" src="main.js" ></script>
+	</body>
+</html>

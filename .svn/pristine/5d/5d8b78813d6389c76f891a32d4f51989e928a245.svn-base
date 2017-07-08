@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <title>商户详情</title>
+		<!-- css引入 -->
+		<link rel="stylesheet" href="../css/common/common.css" />
+		<link rel="stylesheet" href="../css/common/resetnew-min.css" />
+		<link rel="stylesheet" href="../css/page/lbc_zoneDetail.css" />
+	</head>
+	<body class="body-bg">
+	<div class="body-main">
+		<div class="body-content" style="padding-top:1px;margin-top:0;border-top:none;">
+			<div class="z-box">
+				<div class="con-div" style="padding-bottom:1.2rem;">
+					<div class="img1-div">
+						<img src="../css/img/img_load.jpg" alt=""/>
+					</div>
+					<div class="tit-div" >
+
+						<span id="z-name" class="ellipsis"></span>
+						<span class="money-span " style="margin-top: 0.214rem;">人均:<span style="color: #FF6100">0元</span></span>
+				</div>
+				</div>
+				<div class="btn-div">
+					<div class="b-zone3 introduction-div ellipsis"></div>
+					<ul class="deal">
+						<!--<li class="li-1"><i class="b_zone3"></i><span class="font16" data-lo="" data-la="" id="J_lo_la">到这里去</span></li>-->
+						<li id="J-telephone" data-tel=""><i class="b-zone4"></i><span class="font16" ></span></li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="z-box2 hid">
+				<div class="intr-div"><i ></i>优惠信息</div>
+				<div class="demo-cont">
+				</div>
+			</div>
+			<div class="z-box2">
+				<div class="intr-div"><i class="b-zone8 hid"></i>商户信息</div>
+				<div class="btm-div">暂无简介</div>
+			</div>
+			<div class="bodtom-box">
+				<i class="icon logobot-icon"></i><span class="bot-title">跑长途，上陆鲸！</span>
+				<button id="loadBtn" class="commonButton">点我下载</button>
+			</div>
+			<div id="jCall">
+				<p><a id="jPhone"></a></p>
+				<p><a id="jMobile"></a></p>
+				<div id="cancle">取消</div>
+			</div>
+			<div class="zheZhao"></div>
+		</div>
+	</div>
+		<!-- js引入 -->
+		<script type="text/javascript" src="../js/lib/zepto.min.js" ></script>
+		<script type="text/javascript" src="../js/lib/fastclick.js" ></script>
+		<script type="text/javascript" src="../js/common/data.js" ></script>
+		<script src="../js/weiget/MD5.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="../js/weiget/mune.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="../js/common/lbcApi.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../js/weiget/getJsonp.js" ></script>
+		<script src="../js/weiget/base.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../js/page/lbc_zoneDetail.js" ></script>
+		<script type="text/javascript">
+			function errorImg(obj) {
+				obj.src = "../css/img/b_zone6.png";
+				obj.onerror = null;
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,202 @@
+body.body-bg{
+	background: #efefef;
+}
+.body-bg *{
+	box-sizing: border-box;
+}
+.money-bar{
+	background:#ffffff;
+	height:7.15rem;
+	overflow: hidden;
+}
+.money-use{
+	width:50%;
+	height:2.86rem;
+	float: left;
+	margin:2.145rem 0;
+}
+.money-use span.t{
+	width: 100%;
+	display:block;
+	font-size:1rem;
+	color:#68758e;
+	line-height:1rem;
+	text-align:center;
+	margin-top:-0.5rem;
+}
+.money-use span.num{
+	width: 100%;
+	display:block;
+	font-size:1.25rem;
+	color:#20304b;
+	line-height:1.25rem;
+	text-align:center;
+	margin-top:1.12rem;
+}
+.money-use span.can{
+	color:#0093ff;
+}
+.money-left{
+	border-right:1px solid #efefef;
+}
+
+/*无记录*/
+.no-detail{
+	height:21rem;
+	text-align: center;
+	font-size:1rem;
+	color:#68758e;
+	line-height:1.5rem;
+	overflow: hidden;
+}
+.no-detail img{
+	display: block;
+	width: 10rem;
+	margin:3rem auto 0;
+}
+
+/*账单详情*/
+.money-bill{
+	background-image:linear-gradient(-180deg, #1caffe 0%, #0094ff 100%);
+	background-image:-webkit-linear-gradient(-90deg, #1caffe 0%, #0094ff 100%);
+	width:100%;
+	height:220px;
+	color:#fff;
+	overflow: hidden;
+}
+.money-time{
+	font-size:12px;
+	line-height:12px;
+	margin: 14px 0 0 10px;
+}
+.money-subtitle{
+	text-align: center;
+	font-size:14px;
+	line-height:14px;
+	margin: 24px 0 10px 0;
+}
+.money-msg span{
+	font-size:36px;
+	line-height:36px;
+	text-align:center;
+	display: block;
+}
+.money-btn{
+	display: block;
+	background:#ffffff;
+	border-radius:20px;
+	width:148px;
+	height:40px;
+	line-height: 40px;
+	text-align: center;
+	font-size:14px;
+	color:#0093ff;
+	line-height:40px;
+	margin: auto;
+	text-indent: 8px;
+}
+.money-btn img{
+	width: 14px;
+	display: inline-block;
+	margin-top: -2px;
+}
+
+.money-tool{
+	display: block;
+	background:#ffffff;
+	box-shadow:inset 0 0 0 0 #dfdfdf;
+	width:100%;
+	height:48px;
+	line-height: 48px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.money-tool .title{
+	float: left;
+	margin-left: 12px;
+	font-size:14px;
+	color:#68758e;
+}
+.money-tool .title label{
+	font-size: 12px;
+}
+.money-tool .dir{
+	float: right;
+	margin-right: 12px;
+}
+.money-tool .dir label{
+	font-size:16px;
+	color:#0093ff;
+}
+
+.money-tool .dir label.money-next-bill{
+	color:#35b084;
+	font-size:14px;
+}
+.money-tool .dir img{
+	width: 16px;
+	display: inline-block;
+	margin-top: -4px;
+}
+.money-msg .time-limit{
+	display: block;
+	text-align: center;
+	margin:12px auto;
+}
+.money-msg .tips{
+	background:rgba(0,0,0,0.20);
+	border-radius:10px;
+	line-height: 20px;
+	display: block;
+	height:20px;
+	width: 58px;
+	margin:12px auto;
+	text-align: center;
+}
+.money-ok{
+	overflow: hidden;
+}
+.money-ok img{
+	display: block;
+	width: 100px;
+	margin:0px auto 15px;
+}
+
+.money-help{
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	font-size:14px;
+	color:#0093ff;
+	text-align:center;
+}
+.money-help img{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-right:5px;
+	line-height: 30px;
+}
+
+
+/*顶部提示框*/
+.money-tips{
+	display: block;
+	background:#fffbde;
+	height:41px;
+	line-height: 41px;
+	position: relative;
+	border-bottom:1px solid #dfdfdf;
+	font-size:14px;
+	color:#ff9a2f;
+	text-align:left;
+	text-indent: 10px;
+}
+.money-tips img{
+	position: absolute;
+	right: 2px;
+    width: 45px;
+    top: -2px;
+}

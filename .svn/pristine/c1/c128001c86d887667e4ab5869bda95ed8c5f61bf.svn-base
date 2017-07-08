@@ -1,0 +1,149 @@
+.au-banner-box{
+	font-size: 42px;
+	color: #FFFFFF;
+	position: relative;
+}
+.au-banner-box p{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	margin-top: -27.5px;
+	text-align: center;
+}
+.au-banner{
+	width: 100%;
+	height: auto;
+}
+
+.au-top{
+	position: relative;
+}
+.au-top span{
+	font-size: 18px;
+	color: #FFFFFF;
+	position: absolute;
+	top: 52%;
+}
+.au-img{
+	width: 100%;
+	height: auto;
+}
+.au-menu{
+	vertical-align: top;
+	display: inline-block;
+	font-size: 16px;
+	color: #666666;
+	line-height: 16px;
+	height: 100%;
+}
+.au-menu li{
+	margin-top: 46px;
+	width: 118px;
+	text-align: right;
+	padding-right: 40px;
+	box-sizing: border-box;
+}
+.au-menu li:first-child{
+	margin-top: 49px;
+}
+.au-menu .checked{
+	color: #22222C;
+	font-weight: bold;
+}
+.au-con{
+	display: inline-block;
+	vertical-align: top;
+}
+#allmap{
+	width: 800px;
+	height: 340px;
+	overflow: hidden;
+	margin:0;
+	font-family:"微软雅黑";
+}
+.about-text{
+	line-height: 24px;
+	font-size: 16px;
+	padding: 25px 0;
+}
+.message-tl{
+	margin-top: 20px;
+	font-size: 16px;
+}
+.message-bor{
+	margin-top: 10px;
+	padding: 0 10px;
+	border: #ddd solid 1px;
+	position: relative;
+}
+.message-bor input{
+	width: 100%;
+	padding: 9px 0;
+	line-height: 22px;
+	font-size: 16px;
+	border: 0;
+	font-family:"微软雅黑";
+	outline: none;
+}
+.message-bor textarea{
+	width: 100%;
+	padding: 9px 0;
+	line-height: 22px;
+	font-size: 16px;
+	border: 0;
+	font-family:"微软雅黑";
+	height: 102px;
+	outline: none;
+}
+.message-bor input.red,.message-bor textarea.red{
+	color: #f00;
+}
+.message-button{
+	height: 40px;
+	margin-top: 50px;
+}
+.message-button input{
+	width: 100px;
+	height: 40px;
+	float: left;
+	line-height: 40px;
+	text-align: center;
+	font-family:"微软雅黑";
+	text-align: center;
+	font-size: 16px;
+	border: 0;
+	cursor: pointer;
+}
+.mess-sub{
+	background: #222;
+	color: #fff;
+}
+.mess-res{
+	background: none;
+	color: #666;
+}
+.message-bor:before{
+	width: 400px;
+	position: absolute;
+	right: 0;
+	text-align: right;
+	bottom: -30px;
+	height: 30px;
+	line-height: 30px;
+	color: #f00;
+	font-family: "宋体";
+	font-size: 12px;
+	display: none;
+}
+.message-bor.sh:before{
+	display: block;
+}
+#mess-title:before{
+	content:"意见标题不能为空";
+}
+#mess-text:before{
+	content:"意见内容不能为空";
+}
+#mess-phone:before{
+	content:"联系方式不能为空";
+}

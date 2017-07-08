@@ -1,0 +1,27 @@
+.tf-sh-box{
+	display: none;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 15%;
+	z-index: 102;
+}
+.tf-sh-img{
+	padding: 0 15%;
+	width: 70%;
+	height: auto;
+}
+.tf-sh-bg{
+	display: none;
+	position: fixed;
+	background-color: #000000;
+	opacity: 0.4;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 101;
+}
+.hid{
+	display: none;
+}

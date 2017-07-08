@@ -1,0 +1,125 @@
+@charset "utf-8";
+/*class  -连接*/
+.body-content {
+    margin-top: 0;
+    border-top:0;
+    color: #3F3F3F;
+}
+.p-tit{
+	padding: 0 0.937rem;
+	font-size: 1.0rem;
+	height: 2.5rem;
+	line-height: 2.5rem;
+}
+.p-tit span{
+	font-size: 0.8rem;
+	float: right;
+	margin-right: 1.2rem;
+	height: 2.5rem;
+	line-height: 2.5rem;
+}
+.p-question{
+	padding: 0 0.75rem;
+	padding-right: 2.0rem;
+	font-size: 0.875rem;
+	background-color: #FFFFFF;
+	border-top:1px solid #DFDFDF;
+	position: relative;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	overflow: hidden;
+}
+.p-con{
+	padding: 0.5rem 0.75rem;
+	font-size: 0.75rem;
+	display: none;
+	color: #666666;
+	border-bottom:1px solid #DFDFDF;
+	line-height: 1.2rem;
+}
+.help-go{
+	position: absolute;
+	right: 0.5rem;
+	top: 0.312rem;
+	width: 2.0rem;
+	height: 2.0rem;
+	background:no-repeat center center url(../img/help-go.png);
+	background-size:1.0rem;
+}
+.help-down{
+	position: absolute;
+	right: 0.5rem;
+	top: 0.312rem;
+	width: 2.0rem;
+	height: 2.0rem;
+	background:no-repeat center center url(../img/help-down.png);
+	background-size:1.0rem;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.help-down.cur{
+	transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+}
+.p-li2{
+	width: 50%;
+	float: left;
+	box-sizing: border-box;
+	border-top:1px solid #DFDFDF;
+	padding: 0 0 0 0.75rem;
+	font-size: 0.875rem;
+	background-color: #FFFFFF;
+	position: relative;
+	height: 2.5rem;
+	line-height: 2.5rem;
+}
+#p-menu .p-li2:nth-child(odd),.br{
+	border-right:1px solid #DFDFDF;
+}
+.p-img{
+	width: 100%;
+	height: auto;
+}
+/*.fot-menu{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 9999;
+}*/
+.fot-menu .p-tit{
+	background: #efefef;
+}
+#p-menu{
+	overflow: hidden;
+	background: #fff;
+}
+#fot-menu{
+	border-top:1px solid #DFDFDF;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+#help-content{
+	font-size: 1rem;
+	line-height: 2rem;
+}
+#help-content p{
+	line-height: 2rem;
+}
+#help-content img{
+	width: 100%;
+	display: block;
+}
+#load_text{
+	text-align: center;
+	padding: 0.5rem 0;
+	display: none;
+}
+#load_text span{
+	display: inline-block;
+	padding: 0.25rem 1rem;
+	color: #fff;
+	background: rgba(0,0,0,0.2);
+	font-size: 0.66rem;
+	border-radius: 2rem;
+}

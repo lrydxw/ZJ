@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <title>陆鲸</title>
+		<!-- css引入 -->
+		<link rel="stylesheet" href="../css/common/resetnew-min.css" />
+		<link rel="stylesheet" href="../css/common/common.css" type="text/css"  />
+		<link rel="stylesheet" href="../css/page/owner_electronicPolicy.css" />
+	</head>
+	<body class="new_bg">
+		<!--主体-->
+		<div class="body-main">
+			<!--头部-->
+			<div class="body-top hid">
+				<div class="nvbt iback" onclick="backFun()"></div>
+				<div class="nvtt"></div>
+			</div>
+			<!--内容-->
+			<div class="body-content no-top">
+				<div class="ep-box">
+					<span class="ep-tit">保单号</span>
+					<div id="policyno" class="ep-con con1"></div>
+				</div>
+				<div class="ep-box">
+					<span class="ep-tit">保费</span>
+					<div id="premium" class="ep-con con1 red"></div>
+				</div>
+				<div id="tradeinfo" class="ep-box">
+					<span class="ep-tit">关联运单</span>
+					<div class="ep-con con2">
+						<p id="address" class="ep-p"></p>
+						<p id="topartyrealname" class="ep-p"></p>
+					</div>
+				</div>
+				<div class="ep-box">
+					<span class="ep-tit tit1"><p>起始地</p><p>目的地</p><p>货物名称</p></span>
+					<div class="ep-con con3">
+						<p id="fromaddress" class="ep-p"></p>
+						<p id="toaddress" class="ep-p"></p>
+						<p id="goodsname" class="ep-p"></p>
+					</div>
+				</div>
+				<div class="ep-box">
+					<span class="ep-tit tit1"><p>货物类型</p><p>包装方式</p><p>货物价值</p></span>
+					<div class="ep-con con3">
+						<p id="goodstype" class="ep-p"></p>
+						<p id="packagetype" class="ep-p"></p>
+						<p id="goodsvalue" class="ep-p"></p>
+					</div>
+				</div>
+				<p class="ep-memo">保障期限：从装货到卸货期间，最长15天</p>
+				<div class="ep-box">
+					<span class="ep-tit">起运时间</span>
+					<div id="ensurestarttime" class="ep-con con1"></div>
+				</div>
+				<div class="ep-box">
+					<span class="ep-tit">车辆信息</span>
+					<div id="carplatenumber" class="ep-con con1"></div>
+				</div>
+				<div class="ep-box">
+					<span class="ep-tit tit1">
+						<p>投保人</p>
+						<p>参保人</p>
+					</span>
+					<div class="ep-con con4">
+						<p id="applicantname" class="ep-p"></p>
+						<p id="insuredname" class="ep-p"></p>
+					</div>
+				</div>
+				<div class="ep-box">
+					<span class="ep-tit">邀请码</span>
+					<div id="invatationcode" class="ep-con con1"></div>
+				</div>
+				<div class="ep-btn">
+					<p class="ep-btn-p1">查看电子保单</p>
+					<p class="ep-btn-p2">请在IE浏览器中打开</p>
+				</div>
+			</div>
+		</div>
+		<!-- js引入 -->
+		<script type="text/javascript" src="../js/lib/zepto.min.js" ></script>
+		<script type="text/javascript" src="../js/lib/fastclick.js" ></script>
+		<script type="text/javascript" src="../js/weiget/getJsonp.js" ></script>
+		<script type="text/javascript" src="../js/weiget/base.js" ></script>
+		<script type="text/javascript" src="../js/common/data.js" ></script>
+		<script>
+			app_stoken = getParamVal('token')||'';
+		</script>
+		<script type="text/javascript" src="../js/common/lujingFinanceApi.js" ></script>
+		<script type="text/javascript" src="../js/page/owner_electronicPolicy.js" ></script>
+		
+	</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+	<title>分页组件</title>
+	<meta charset="UTF-8">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="telephone=no" name="format-detection">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
+	
+	<style type="text/css">
+	p{
+		height: 3rem;
+		line-height: 3rem;
+		border-bottom: 1px solid #eee;
+		padding:0 1rem;
+	}
+	</style>
+</head>
+<body>
+	<div id="list">
+		<p>ddddddddddd</p>
+		<p>ddddddddddd</p>
+		<p>ddddddddddd</p>
+		<p>ddddddddddd</p>
+		<p>ddddddddddd</p>
+		<p>ddddddddddd</p>
+		<p>ddddddddddd</p>
+		<p>ddddddddddd</p>
+		<p>ddddddddddd</p>
+		<p>ddddddddddd</p>
+		<p>ddddddddddd</p>
+		<p>ddddddddddd</p>
+		<p>ddddddddddd</p>
+		<p>ddddddddddd</p>
+		<p>ddddddddddd</p>
+		<p>ddddddddddd</p>
+		<p>ddddddddddd</p>
+		<p>ddddddddddd</p>
+	</div>
+<script type="text/javascript" src="../../common/js/lib/zepto.min.js" ></script>
+<!--<script type="text/javascript" src="../../common/js/lib/fastclick.js" ></script>-->
+<script type="text/javascript" src="../../common/js/weiget/tool-fun.js" ></script>
+<script type="text/javascript" src="../../common/js/weiget/base.js" ></script>
+<script type="text/javascript" src="../../common/js/api/api-com.js" ></script>
+<script src="../../common/js/weiget/scrollLoading.js"></script>
+<script type="text/javascript">
+	var count = 0;
+	var maxCount = 5;
+	var scrollLoading = new transfar.ScrollLoading();
+	scrollLoading.bind('fetch', function(type) {
+			if(type === 'TOP') {
+				alert(1)
+			}else{
+				alert(2)
+				$('#list').append('<p class="loading" >加载中...</p>');
+			}
+		setTimeout(function() {
+			count ++;
+			
+				$('.loading').remove();
+			if(type === 'TOP') {
+				$('#list').prepend('<p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>');
+			}
+			else {
+				$('#list').append('<p>2222</p><p>2222</p><p>2222</p><p>2222</p>');
+			}
+			
+			if(count < maxCount) {				
+				scrollLoading.trigger('turn', 'on');
+			}
+			else {
+				scrollLoading.trigger('turn', 'off');
+			}		
+		}, 1000)
+	})
+</script>
+</body>
+</html>

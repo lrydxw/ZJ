@@ -1,0 +1,443 @@
+@charset "utf-8";
+a {
+	text-decoration: none;
+}
+
+.huiHua {
+	/*position: relative;*/
+	background-color: #F9F9F5;
+	overflow: Scroll;
+	overflow-x: hidden;
+}
+/*class  -连接*/
+
+html {
+	font-size: 18px;
+}
+
+.body-main {
+	width: 70%;
+	margin: auto;
+	background-color: #F9F9F5;
+}
+
+.header {
+	margin-top: 3.111rem;
+}
+
+.hd-box {
+	margin: 0.5rem auto;
+}
+
+.khbd {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.khbd h1 {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 0.5rem;
+	margin-bottom: 1.778rem;
+}
+
+.logo {
+		float: right;
+		display: inline-block;
+		width: 50%;
+		height:20%;
+		text-align: right;
+		vertical-align: top;
+	}
+.logo-p {
+		width: 50%;
+		height:20%;
+		vertical-align: top;
+	}
+
+.header p {
+	font-size: 1.0rem;
+}
+
+.logo_char {
+	display: inline-block;
+	vertical-align: text-top;
+}
+
+.logo_char h2 {
+	font-size: 1.111rem;
+}
+
+.hr {
+	width: 100%;
+	margin: 1.556rem auto;
+	border-top: 0.06rem dashed #ccc;
+}
+
+.welcome p {
+	font-size: 0.889rem;
+}
+
+.nav {
+	display: inline-block;
+	margin-right: 1.111rem;
+}
+
+.nav p {
+	margin-top: 1.889rem;
+	margin-left: 1.444rem;
+}
+
+.nav p,
+ul,
+li a {
+	font-size: 0.889rem;
+	color: #0000EE;
+}
+
+.nav ul {
+	margin-left: 2.778rem;
+	margin-top: 0.556rem;
+}
+
+.nav li {
+	margin-left: 1.5rem;
+}
+
+.details img {
+	margin: 1.111rem 1.111rem;
+}
+
+.d-hd {
+	font-size: 1.111rem;
+	margin-bottom: 1.333rem;
+}
+
+.d-details {
+	font-size: 0.889rem;
+	margin-bottom: 1.222rem;
+}
+
+.odd {
+	background-color: #F2F3F1;
+}
+
+table {
+	width: 100%;
+	border-color: #DDDDDD;
+	margin-bottom: 0.556rem;
+}
+
+table tr th {
+	font-size: 1.0rem;
+	padding: 0.278rem;
+}
+
+table tr td {
+	font-size: 1.0rem;
+}
+
+table tr th,
+td {
+	padding: 0.0rem 0.556rem;
+}
+
+.td2 {
+	width: 40%;
+	text-align: right;
+}
+
+.priceRule {
+	color: #000;
+	font-size: 1.0rem;
+}
+
+.mar {
+	margin-bottom: 0.0rem;
+}
+
+.map {
+	width: 100%;
+	height: 100%;
+}
+
+.top {
+	display: none;
+}
+
+@media all and (max-width: 960px) {
+	html {
+		font-size: 16px;
+	}
+	.huiHua {
+		background-color: #F9F9F5;
+		overflow: Scroll;
+		overflow-x: hidden;
+	}
+	.body-main {
+		width: 90%;
+		margin: auto;
+		background-color: #F9F9F5;
+	}
+	.header {
+		margin-top: 3.111rem;
+	}
+	.khbd {
+		display: inline-block;
+		vertical-align: top;
+	}
+	.khbd h1 {
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 0.5rem;
+		margin-bottom: 1.778rem;
+	}
+	.logo {
+		float: right;
+		display: inline-block;
+		width: 50%;
+		height: 20%;
+		text-align: right;
+		vertical-align: top;
+	}
+	.logo-p {
+		width: 50%;
+		height: 20%;
+		vertical-align: top;
+	}
+	.main-down {
+		position: relative;
+	}
+	.header p {
+		font-size: 1.0rem;
+		padding: 1.8rem 0.0rem;
+	}
+	.welcome p {
+		font-size: 0.889rem;
+	}
+	.nav {
+		display: inline-block;
+		position: absolute;
+		top: 0.0rem;
+		left: 0.0rem;
+		width: 13.5rem;
+	}
+	.nav p {
+		color: #0000EE;
+		margin: 2.125rem 0.0rem 1.25rem;
+	}
+	.nav ul {
+		color: #0000EE;
+		margin-left: 0.778rem;
+		margin-top: 0.556rem;
+	}
+	.nav p,
+	ul {
+		font-size: 1.0rem;
+	}
+	.nav ul li a {
+		color: #0000EE;
+		font-size: 0.9rem;
+	}
+	.nav li {
+		margin-left: 0.0rem;
+	}
+	.details img {
+		margin: 1.111rem 1.111rem;
+	}
+	.d-hd {
+		font-size: 1.111rem;
+		margin-bottom: 1.333rem;
+	}
+	.details {
+		float: right;
+		width: 55%;
+	}
+	.d-details {
+		font-size: 0.889rem;
+		margin-bottom: 1.222rem;
+	}
+	.odd {
+		background-color: #F2F3F1;
+	}
+	table {
+		width: 100%;
+		border-color: #DDDDDD;
+		margin-bottom: 0.556rem;
+	}
+	table tr th {
+		font-size: 1.0rem;
+		padding: 0.278rem;
+	}
+	table tr td {
+		font-size: 1.0rem;
+	}
+	table tr th,
+	td {
+		padding: 0.0rem 0.556rem;
+	}
+	.td2 {
+		width: 40%;
+		text-align: right;
+	}
+	.priceRule {
+		color: #000;
+		font-size: 1.0rem;
+	}
+	.hr {
+		width: 100%;
+		margin: 1.556rem auto;
+		border-top: 0.06rem dashed #ccc;
+	}
+	.map {
+		width: 100%;
+		height: 100%;
+	}
+	.top {
+		display: none;
+	}
+}
+
+@media all and (max-width: 480px) {
+	html {
+		font-size: 14px;
+	}
+	.body-main {
+		width: 90%;
+		margin: auto;
+		background-color: #F9F9F5;
+	}
+	/*.hd-box p{
+		width: 1.5rem;
+		height: 0.1rem;
+		display: inline-block;
+		}
+	*/
+	.khbd {
+		display: inline-block;
+		vertical-align: top;
+	}
+	.khbd h1 {
+		display: inline-block;
+		vertical-align: top;
+		font-size: 1.3rem;
+		margin: 0px 0.2rem 1.778rem 2.5rem;
+	}
+	.hd-box{
+		height: 2.0rem;
+	}
+	.logo {
+		float: right;
+		display: inline-block;
+		width: 8.0rem;
+		/*height: 0.5rem;*/
+		text-align: right;
+		vertical-align: top;
+		
+	}
+	.logo-p {
+		width: 8.0rem;
+		height: 1.8rem;
+		vertical-align: top;
+		
+	}
+
+	.header p {
+		width: 100%;
+		font-size: 1.2rem;
+		padding: 1.8rem 0.0rem;
+		/*border:1px solid red;*/
+	}
+	.welcome p {
+		font-size: 0.989rem;
+		line-height: 1.3rem;
+	}
+	.nav {
+		display: none;
+		position: absolute;
+		top: -19.0rem;
+		left: -0.5rem;
+		width: 13.5rem;
+		border-radius: 5px;
+		margin-top:2.6rem;
+		margin-right: 1.667rem;
+		padding: 0.1rem 0.2rem;
+		background-color: #F9F9F5;
+		opacity: 1;
+		border:1px solid #ccc;
+	}
+	/*.nav{
+		
+	}*/
+	.nav p {
+		margin-top: 1.0rem;
+		margin-left: 0.5rem;
+	}
+	.nav ul {
+		color: #0000EE;
+		margin-left: 0.8rem;
+		margin-top: 0.556rem;
+	}
+	.nav p,
+	ul {
+		font-size: 1.1rem;
+	}
+	.nav ul li {
+		margin-left: 1.689rem;
+		padding: 0.7rem 0.1rem;
+	}
+	.nav ul li a {
+		color: #0000EE;
+		font-size: 1.0rem;
+		
+	}
+	.details img {
+		margin: 1.111rem auto;
+	}
+	.d-hd {
+		font-size: 1.1rem;
+	}
+	.d-details {
+		font-size: 0.989rem;
+		margin-bottom: 1.222rem;
+		line-height: 1.2rem;
+	}
+	.odd {
+		background-color: #F2F3F1;
+	}
+	table {
+		width: 100%;
+		border-color: #DDDDDD;
+		margin-bottom: 0.556rem;
+	}
+	table tr th,
+	td {
+		font-size: 1.1rem;
+		line-height: 1.333rem;
+		padding: 0.5rem;
+	}
+	.td2 {
+		width: 40%;
+		text-align: right;
+	}
+	.details {
+		display: inline-block;
+		width: 100%;
+		font-size: 1.433rem;
+	}
+	.top {
+		display: inline-block;
+		position: absolute;
+		top: 2.7rem;
+		left: 0.5rem;
+		width: 4.0rem;
+		height: 1.8rem;
+		line-height: 1.8rem;
+		color: #0000EE;
+	}
+	
+	#J_top img{
+		width: 2.5rem;
+		height: 1.7rem;
+	}
+}

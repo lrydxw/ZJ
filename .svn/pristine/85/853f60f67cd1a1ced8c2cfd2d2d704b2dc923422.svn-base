@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <title>LBS</title><meta content="配货,找货,空车配货,空车找货，配货网，配货信息网,物流信息" name="keywords"><meta content="陆鲸是传化物流为货主与司机打造的配货平台，基于诚信会员体系和移动互联技术，为会员提供全网信息调度、信息匹配、在线成交，自主研发的“一卡通”支付系统和支持担保金，解决非面对面交易，保障交易双方的配货资金安全、货物安全及公平解决物流交易纠纷。" name="description">
+    <link rel="stylesheet" href="../../common/style/reset-min.css" />
+    <link rel="stylesheet" href="../../common/style/common.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="../../common/style/animate.css" />
+    <script data-main="main" src="../../common/js/lib/require.js"></script>
+</head>
+<body class="body-bg">
+	<!--头部-->
+	<div class="body-top"></div>
+	<!--主体-->
+	<div class="body-main">
+		<!--banner-->
+		<div class="solution-banner-box">
+			<p>解决方案</p>
+			<img class="solution-banner" src="../../common/style/img/t-top-back.png" />
+		</div>
+		<!--内容-->
+		<div class="tf-wrapper">
+			<div class="solution-box-list tf-layout">
+				<div class="solution-box">
+					<i class="solution-img img1"></i>
+					<div class="solution-half">
+						<div class="solution-tit"><i class="solution-icon"></i>轨迹服务</div>
+						<div class="solution-con">
+							<p><i></i>物流行业正在经历一场历史性的变革，由传统物流模式转型向互联网物流模式。轨迹服务为智能物流的健康发展奠定了坚实基础。</p>
+							<p><i></i>轨迹服务提供了实时轨迹查询、轨迹纠偏、轨迹离线查看等服务，适用于物流车辆监控、车费计算、风险控制、数据分析。</p>
+							<p><i></i>我们将开放平台并推出一系列解决轨迹问题的服务，在技术的驱动下更加完善物流服务。</p>
+						</div>
+					</div>
+				</div>
+				<div class="solution-box solution-right">
+					<i class="solution-img img2"></i>
+					<div class="solution-half">
+						<div class="solution-tit"><i class="solution-icon"></i>POI信息采集</div>
+						<div class="solution-con">
+							<p><i></i>在物流地理信息系统中，一个POI信息点可以是一个物流园区、一个停车场、一家餐厅、一间商铺等。上传POI、交流POI、确定有效POI，将所有在物流行业中可以使用的POI信息点收集起来并得到广泛应用。</p>
+							<p><i></i>检索服务促进了信息的交互与流通，包含以下功能模块：POI检索、货运路线检索、行政区边界数据检索、地理编码和逆地理编码。</p>
+							<p><i></i>在不断采集信息的同时将有效的POI信息点及时输出，达到了信息交互的最佳状态。</p>
+						</div>
+					</div>
+				</div>
+				<div class="solution-box">
+					<i class="solution-img img3"></i>
+					<div class="solution-half">
+						<div class="solution-tit"><i class="solution-icon"></i>定位服务</div>
+						<div class="solution-con">
+							<p><i></i>物流定位服务，通过采集需要监控、连接、互动的信息，实现人与人、人与物的连接，方便识别、管理和控制。</p>
+							<p><i></i>在基于基站定位服务的基础上提供附近优质服务、设置电子围栏、实现高效的物流资源配置。可视化精准定位和管理，可以把控的物流状态。</p>
+							<p><i></i>lbs物流地图开放平台的定位服务是广大物流行业开发者定位首选服务。</p>
+						</div>
+					</div>
+				</div>
+				<div class="solution-box solution-right">
+					<i class="solution-img img4"></i>
+					<div class="solution-half">
+						<div class="solution-tit"><i class="solution-icon"></i>区域管理</div>
+						<div class="solution-con">
+							<p><i></i>区域管理提供行政区划作为画图基础，使地理的划分更加精准；支持导入导出，方便与企业系统的集合。</p>
+							<p><i></i>区域管理在行政区划的基础上可以自定义区域，区域的支配不再受到行政区划的局限，可以根据业务特点、范围自由划分区域块，实现物流企业信息网格化管理。</p>
+							<p><i></i>平台面向开发者，将产品功能嵌入到项目、系统、网站或产品中去，智能区划创建智能物流服务。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--页脚-->
+	<div class="body-footer"></div>
+</body>
+</html>

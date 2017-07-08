@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<title>意见反馈</title>
+		<link rel="stylesheet" href="../css/common/reset-min.css" />
+		<link href="../css/common/common.css"  rel="stylesheet" type="text/css"  />
+		<link href="../css/common/my.css"  rel="stylesheet" type="text/css"  />
+		<link href="../css/page/my_advise.css"  rel="stylesheet" type="text/css"  />
+		<script type="text/javascript" src="../js/weiget/mune.js" ></script>
+	</head>
+	<body  class="body-bg">
+		<div class="bodyMain">
+			<div class="bodyTop">
+				<div class="nvbt iback" onclick="finishPage()"></div>
+				<div class="nvtt">意见反馈</div>
+			</div>
+			<div class="bodyContent">
+				<div>
+					<textarea id="advise" placeholder="用的不爽，说两句..."  maxlength="300"></textarea>
+					<span id="tip" class="adviseSapn"><b>0</b>/300字</span>
+				</div>
+				<div class="commonDiv2">
+					<button id="submitBtn" type="button" class="commonButton advise">提交</button>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../js/lib/fastclick.js" ></script>
+		<script type="text/javascript" src="../js/lib/zepto.min.js" ></script>
+		<script type="text/javascript" src="../js/common/data.js" ></script>
+		<script type="text/javascript" src="../js/weiget/getJsonp.js" ></script>
+		<script src="../js/common/contactApi.js"></script>
+		<script>
+			/*URL里面的参数*/
+			var getParamVal = function(key) {
+			    var reg = new RegExp("(^|&|\\?)"+ key +"=([^&]*)(&|$)");
+			    if (ret = location.search.match(reg)) {
+			        return decodeURIComponent(ret[2]);
+			    }
+			    return '';
+			}
+
+			function finishPage(){
+				window.tf56&&window.tf56.finishPage&&window.tf56.finishPage()
+			}
+
+			var type = getParamVal('type');// 0||默认 司机 1货主
+			var sourceCode = window.tf56 && window.tf56.getSourceCode();
+			if(type==1||sourceCode=='0103010101'){
+				document.querySelector('.bodyTop').className = 'bodyTop bodyTopOld'
+				document.querySelector('.iback').className = 'nvbt iback ibackOld'
+				document.querySelector('.nvtt').className = 'nvtt nvttOld'
+			}
+		</script>
+		<script type="text/javascript"  >
+			$('#advise').on('input keyup change keydown',function(){
+				var text=$(this).val()
+				if(text.length>300){
+					text=text.substr(0,text.length-1)
+					$('#advise').val(text)
+				}
+				$('.adviseSapn b').html(text.length)
+			})
+			hideMenu();
+			$('#submitBtn').on('click',adviseSubmit);
+			var isPending = false;
+			function adviseSubmit(){
+				var jsonp_Server = apiUrl.feedbackcs;
+				var request = $("#advise").val();
+				var reg =/^([a-zA-Z0-9]|[\u4e00-\u9fa5]|[\-,\/,\|,\$,\+,\%,\&,\',\(,\),\*,\x20-\x2f,\x3a-\x40,\x5b-\x60,\x7b-\x7e,\x80-\xff,\u3000-\u3002,\u300a,\u300b,\u300e-\u3011,\u2014,\u2018,\u2019,\u201c,\u201d,\u2026,\u203b,\u25ce,\uff01-\uff5e,\uffe5])+$/ ;
+				if(request==""||request==null||request=='undefined'){
+					alertMsg("反馈意见不可为空！");
+					return;
+				}
+				else if(!request.match(reg)){
+					alertMsg("反馈意见输入有误！");
+					return;
+				}
+//				alert(request.match(reg))
+				if(isPending)
+					return;
+				isPending = true;
+				//request= request+"#"+window.tf56.getPhoneInfo();
+//				var apkVersion =window.tf56&&window.tf56.getApkVersion();
+//				var mobileMsg= window.tf56&&window.tf56.getPhoneInfo();
+//				var phoneorpad= window.tf56&&window.tf56.getPhoneOrPad();
+//				if(!apkVersion)apkVersion='';
+//				if(!mobileMsg)mobileMsg='';
+//				if(!phoneorpad)phoneorpad='';
+//				alert(request1);
+//				alert(request);
+
+				if($('#submitBtn').hasClass('issending')) return;  //钩子判断
+				$('#submitBtn').addClass('issending');
+				var params = '&request='+ request + '&random=' + Math.random();
+				window.tf56&&window.tf56.showLoadingDialog("正在加载");
+				var param = {};
+				param.url = jsonp_Server + params,
+				param.callback = function (data) {
+					isPending = false;
+					if (data.result != 'success') {
+						alertMsg(data.msg);
+						return;
+					} else {
+						window.tf56 && window.tf56.alertMessage("感谢您的宝贵意见!");
+						finishPage()
+						// window.tf56.finishPage&&window.tf56.finishPage()
+						// backFun()
+					}
+				}
+				getJsonp(param);
+//					$.ajax({
+//						type: 'GET',
+//						url: jsonp_Server + params,
+//						dataType : 'jsonp',
+//						jsonp :'callback',
+//						success : function(data) {
+////							alert(data.result.result)
+//							isPending = false;
+//							window.tf56&&window.tf56.dismissDialog();
+//							if(data.result!="success"){
+//								window.tf56 && window.tf56.alertMessage("提交失败!");
+//							}else{
+//								window.tf56 && window.tf56.alertMessage("感谢您的宝贵意见!");
+//								backFun()
+//							}
+//						},
+//					 	error: function(xhr, type){
+//							isPending = false;
+//			    			window.tf56&&window.tf56.dismissDialog();
+//			    			window.tf56 && window.tf56.alertMessage("网络不给力,请检查网络连接!");
+//						}
+//					});
+			}
+
+		</script>
+
+	</body>
+
+</html>

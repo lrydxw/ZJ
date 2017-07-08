@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <title>GY</title>
+        <script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<!-- css引入 -->
+		<link rel="stylesheet" href="../../common/style/reset-min.css" />
+		<link rel="stylesheet" href="../../common/style/common.css" />
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body class="body-bg">
+		<!--主体-->
+		<div class="body-main">
+			<!--内容-->
+			<div class="body-content">
+				
+				<div class="ZT">
+					<p class="ZT-sh">
+						您所在的驿站已通过审核
+					</p>
+					<p class="ZT-sh-js">
+						恭喜您正式成为。。。恭喜您正式成为。。。恭喜您正式成为。。。恭喜您正式成为。。。
+					</p>
+				</div>
+				<div class="CH-gy">
+					<img class="CH-gy-photo" src="img/person.png">
+					<p class="CH-gy-font">
+						传化公益
+					</p>
+					<p class="CH-gy-zt1">
+						<span class="CH-gy-zt">审核通过</span>				
+					</p>
+					<ul class="CH-gy-ul">
+						<li class="CH-gy-li">
+							<span class="CH-gy-title">驿站长</span>
+							<span class="Ch-gy-mc">公益</span>
+						</li>
+						<li class="CH-gy-li">
+							<span class="CH-gy-title">驾龄</span>
+							<span class="Ch-gy-mc">15年</span>
+						</li>
+						<li class="CH-gy-li">
+							<span class="CH-gy-title">常驻城市</span>
+							<span class="Ch-gy-mc">杭州市萧山区</span>
+						</li>
+						<li class="CH-gy-li">
+							<span class="CH-gy-title">籍贯</span>
+							<span class="Ch-gy-mc">杭州</span>
+						</li>
+						<li class="CH-gy-li">
+							<span class="CH-gy-title">长跑路线</span>
+							<span class="Ch-gy-mc">杭州市滨江区-金华市东阳市</span>
+						</li>
+						<li class="CH-gy-li  yzcy">
+							<span class="CH-gy-title">驿站成员</span>
+							<span class="Ch-gy-mc">30人</span>
+						</li>
+							<li class="CH-gy-story">
+								<p class="CH-gy-story-title">驿站长的助人故事</p>
+								<input type="text" class="input-story" name=""/>
+							</li>
+					</ul>	
+					<button class="btn">分享驿站</button>	
+				</div>	
+                
+			</div>
+
+		</div>
+
+		<!-- js引入 -->
+		<script type="text/javascript" src="../../common/js/lib/zepto.min.js" ></script>
+		<script type="text/javascript" src="../../common/js/lib/fastclick.js" ></script>
+		<script type="text/javascript" src="../../common/js/weiget/tool-fun.js" ></script>
+		<script type="text/javascript" src="../../common/js/weiget/base.js" ></script>
+		<script type="text/javascript" src="../../common/js/api/api-com.js" ></script>
+		<script type="text/javascript" src="js/main.js" ></script>
+	</body>
+</html>

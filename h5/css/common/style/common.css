@@ -1,0 +1,66 @@
+
+.body-bg{
+	background-color: #FFFFFF;
+}
+
+.tf-wrapper{
+	background-color: #FFFFFF;
+}
+.bgc-black{
+	background-color: #222731;
+}
+.tf-layout{
+	margin: 0 auto;
+}
+.lt{
+	float: left;
+}
+.rt{
+	float: right;
+}
+a{
+	text-decoration: none;
+	color: #666;
+}
+
+
+.hid{
+	display: none;
+}
+
+
+/*loading代码*/
+.g-loading{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.1);
+    z-index: 9999;
+}
+.g-loading-box{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    height: 5.625rem;
+    width: 5rem;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 0.3rem;
+    text-align: center;
+}
+.g-loading-box > .icon{
+    display: inline-block;
+    width: 1.875rem;
+    height: 1.875rem;
+    padding: 2.75rem 0 0.5rem 0;
+    background: transparent url(../../component/main/statics/loading_128.gif) no-repeat center center;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+}
+.g-loading-box > p{
+    color: #FFF;
+    font-size: 0.875rem;
+}

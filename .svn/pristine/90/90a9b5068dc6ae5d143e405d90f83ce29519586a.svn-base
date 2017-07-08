@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>凭证说明</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<style>
+	    /* 适应窗口大小  rem标准模式*/
+		@media screen and (max-width: 374px) {
+			*{font-size: 16px;line-height: 16px;}
+		}
+		@media (min-width:375px) and (max-width: 413px) {
+			*{font-size: 18px;line-height: 18px;}
+		}
+		@media (min-width:414px) and (max-width: 479px) {
+			*{font-size: 20px;line-height: 20px;}
+		}
+		@media (min-width:480px) and (max-width:639px){
+			*{font-size: 24px;line-height: 24px;}
+		}
+		@media screen and (min-width: 640px) {
+			*{font-size: 32px;line-height: 32px;}
+		}
+		html{font-family:Verdana,'Hiragino Sans GB','Microsoft Yahei',sans-serif;-webkit-font-smoothing:antialiased}body{padding:0;margin:0}ul,li{list-style:none;margin:0;padding:0}h1,h2,h3,h4,h5,p{margin:0}img{border:0}input,img{vertical-align:middle}*{-webkit-tap-highlight-color:rgba(0,0,0,0)}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0}.clearfix:after{clear:both}
+	    *{
+	        padding: 0;
+	        margin: 0;
+	        border: none;
+	        color: #3F3F3F;
+	    }
+	    .body-top {
+			height: 3.0rem;
+			line-height: 3.0rem;
+			font-size: 1.125rem;
+			color: #3F3F3F;
+			text-align: center;
+			width: 100%;
+			top: 0px;
+			z-index: 100;
+		}
+	    .p-con{
+	    	padding: 0 1.0rem;
+	    	/*padding-left:2.0rem;*/
+	    	margin: 0.6rem 0;
+	    }
+	    .p-con p{
+	    	font-size: 0.75rem;
+	    	margin-bottom: 2.0rem;
+	    }
+	    .hid{
+	    	display: none;
+	    }
+	</style>
+</head>
+<body>
+<div class="main-body">
+	<div id="tf56Show" class="body-top">电子凭证</div>
+	<div class="p-con">
+		<p>协议内容一旦双方确认通过，将作为您与合同相对方的运输业务凭证。承运过程中请注意以下几点：     
+		</p><p>一、运输前，货物承运司机务必对所装货物清点无误；               
+		</p><p>二、发货方须按照约定时间及时给承运司机支付运输费用；    
+		</p><p>三、议定价格后，在运输途中，不得出现超高、超宽、超重等违章行为；
+		</p><p>四、运输过程中如遇逾期、货损、货差、扣货等纠纷，请及时与合同相对方协商解决。
+		</p>
+	</div>
+<script>
+	if(window.tf56){
+		document.getElementById("tf56Show").style.display='none';
+	}
+</script>
+</body>
+</html>

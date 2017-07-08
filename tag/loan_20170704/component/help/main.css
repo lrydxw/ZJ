@@ -1,0 +1,87 @@
+.body-bg{
+	background: #eceef3;
+}
+.qa-tool{
+	display: block;
+	background:#ffffff;
+	width:100%;
+	height:48px;
+	line-height: 48px;
+	overflow: hidden;
+	position: relative;
+}
+
+.qa-tool:before{
+	content:"";
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	height: 1px;
+	width: 100%;
+	background: #dfdfdf;
+	transform: scale(1,0.5);
+-webkit-transform: scale(1,0.5)
+}
+
+.qa-tool .title{
+	float: left;
+	margin-left: 12px;
+	font-size:16px;
+	color:#20304b;
+	text-align:left;
+}
+.qa-tool .title label{
+	font-size: 12px;
+}
+
+.qa-tool .dir{
+	float: right;
+	margin-right: 12px;
+}
+.qa-tool .dir label{
+	font-size:16px;
+	color:#0093ff;
+}
+.qa-tool .dir img{
+	width: 16px;
+	display: inline-block;
+	margin-top: -4px;
+	transform:rotate(90deg);
+	-webkit-transform:rotate(90deg);
+}
+
+.qa-on .dir img{
+	transform:rotate(-90deg);
+	-webkit-transform:rotate(-90deg);
+}
+.qa-cont{
+	height: 0px;
+	overflow: hidden;
+	background:#f7f7f7;
+	line-height: 24px;
+	font-size:14px;
+	color:#68758e;
+	position: relative;
+}
+.qa-cont:before{
+	content:"";
+	position: absolute;
+	top: -1px;
+	left: 0px;
+	width: 100%;
+	height: 1px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.1);
+}
+.qa-cont:after{
+	content:"";
+	position: absolute;
+	bottom: -1px;
+	left: 0px;
+	width: 100%;
+	height: 1px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.1);
+}
+.qa-cont-show{
+	padding: 14px 12px;
+	height: auto;
+}

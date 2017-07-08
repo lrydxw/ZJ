@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no"/>
+
+		<title>诚信等级规则</title>
+		<link rel="stylesheet" href="../css/common/resetnew-min.css" />
+		<link href="../css/common/common.css"  rel="stylesheet" type="text/css"  />
+		<link rel="stylesheet" href="../css/page/my_aboutHonestLevel.css" />
+	</head>
+	<body>
+		<div class="bodyMain">
+			<div class="bodyTop">
+				<div class="nvbt iback" onclick="backFun()"></div>
+				<div class="nvtt">诚信等级规则</div>
+			</div>
+			<div class="bodyContent">
+					<p class="aboutTheRule">1、影响用户诚信等级的因素包含认证、在线交易、用户评价、投诉举报、开通定位、线上运费支付等都将影响到您的诚信等级;</p>
+					<p class="aboutTheRule">2、在线交易量越大、用户好评率越高、成功开通定位、线上运费支付金额越高将会赚取越高的诚信等级；反之认证证件不全、在线交易量少、用户差评率高、开通定位失败、线上运费支付金额少将会使您的诚信等级受到影响或降低您的诚信等级;</p>
+					<p class="aboutTheRule">3、诚信等级降低后您还拥有重新升级的机会；当您的诚信等级降至零时，将在30天后关闭您发部分操作权限;</p>
+					<p class="aboutTheRule">4、若您被投诉举报经查实将影响到您的诚信等级，情节严重则将会被冻结账号或加入黑名单。</p>
+				
+			</div>
+			<script type="text/javascript" src="../js/weiget/mune.js" ></script>
+			<script type="text/javascript" src="../js/lib/zepto.min.js" ></script>
+			<script type="text/javascript">
+				/*货物URL里面的参数*/
+				var getParamVal = function(key) {
+				    var reg = new RegExp("(^|&|\\?)"+ key +"=([^&]*)(&|$)");
+				    if (ret = location.search.match(reg)) {
+				        return decodeURIComponent(ret[2]);
+				    }
+				    return '';
+				}
+				var vCode = getParamVal('vCode');
+				if(vCode/1>=20170222){
+					$('.bodyTop').hide()
+					$('.bodyContent').css('marginTop','0');
+				}
+			</script>
+	</body>
+</html>

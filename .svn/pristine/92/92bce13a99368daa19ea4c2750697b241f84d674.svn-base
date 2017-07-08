@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no"/>
+		<title>我的活动详情</title>
+		<link rel="stylesheet" href="../css/common/resetnew-min.css" />
+		<link href="../css/common/common.css"  rel="stylesheet" type="text/css"  />
+	</head>
+	<body class="body-bg mybgc">
+		<div class="bodyMain">
+			<div class="bodyTop">
+				<div class="nvbt iback" onclick="backFun()"></div>
+				<div class="nvtt">活动详情</div>
+			</div>
+			<div class="bodyContent">
+				<img src="../css/img/free_service.png" width="100%"/>
+			</div>
+
+		</div>
+		<script src="../js/lib/fastclick.js" charset="utf-8"></script>
+		<script src="../js/common/data.js" charset="utf-8"></script>
+		<script src="../js/lib/zepto.min.js"></script>
+		<script type="text/javascript" src="../js/weiget/mune.js" ></script>
+	</body>
+</html>
